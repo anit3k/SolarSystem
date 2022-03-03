@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolarSystem", "SolarSystem\SolarSystem.csproj", "{513C6757-5CE0-431D-B846-358F2239F3DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Static Html Lib", "Static Html Lib\Static Html Lib.csproj", "{BEBD458F-B237-4F69-BF5E-69F48E83EC88}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{513C6757-5CE0-431D-B846-358F2239F3DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{513C6757-5CE0-431D-B846-358F2239F3DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{513C6757-5CE0-431D-B846-358F2239F3DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEBD458F-B237-4F69-BF5E-69F48E83EC88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEBD458F-B237-4F69-BF5E-69F48E83EC88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEBD458F-B237-4F69-BF5E-69F48E83EC88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEBD458F-B237-4F69-BF5E-69F48E83EC88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,1 @@
+﻿This library will contain shared static html files
