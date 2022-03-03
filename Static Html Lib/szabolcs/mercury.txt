@@ -1,4 +1,11 @@
 Mercury is the smallest planet in the Solar System and the closest to the Sun.
 Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets.
 Mercury rotates in a way that is unique in the Solar System.
-Mercury's axis has the smallest tilt of any of the Solar System's planets
+Mercury's axis has the smallest tilt of any of the Solar System's planets.
+Mercury's surface appears heavily cratered and is similar in appearance to the Moon's, indicating that it has been geologically inactive for billions of years.
+Having almost no atmosphere to retain heat, it has surface temperatures that vary diurnally more than on any other planet in the Solar System, ranging from −173°C at night to 427°C during the day across the equatorial regions.
+Mercury is one of four terrestrial planets in the Solar System, and is a rocky body like Earth.
+It is the smallest planet in the Solar System.
+
+Facts:  Mercury is named after the Roman god Mercurius (Mercury), god of commerce, messenger of the gods.
+        The ancients knew Mercury by different names depending on whether it was an evening star or a morning star.
