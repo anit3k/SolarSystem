@@ -1,0 +1,1 @@
+This folder is used for playing with static web pages to implement in soulotion
