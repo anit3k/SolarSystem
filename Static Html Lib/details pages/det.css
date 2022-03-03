@@ -1,6 +1,22 @@
 body{
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.planet{
+    width: 100%;
     
 }
-.img-thumbnail{
-    border: 0cm;
+p{
+    color: aliceblue;
+}
+.subtitle{
+    color: aliceblue;
+}
+.structure{
+    width: 20%;
+    margin: auto;
+    display: block;
 }
