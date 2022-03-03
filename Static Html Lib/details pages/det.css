@@ -5,18 +5,19 @@ body{
     background-attachment: fixed;
 
 }
-.planet{
+.detail-planet{
     width: 100%;
     
 }
 p{
     color: aliceblue;
 }
-.subtitle{
+.detail-subtitle{
     color: aliceblue;
 }
-.structure{
-    width: 20%;
+.detail-structure{
+    width: 40%;
     margin: auto;
     display: block;
+    
 }
