@@ -13,17 +13,25 @@ for (var starcounter = 0; starcounter < maxStar; starcounter++) {
     
 }
 
-//const positionUpdate = setTimeout(myGreeting, 500);
+(function() {
+    document.onmousemove = handleMouseMove;
+    function handleMouseMove(event) {
+        var eventDoc, doc, body;
 
-/*function starMovement() {
-    var e = window.event;
+        event = event || window.event;
 
-    var posX = e.clientX;
-    var posY = e.clientY;
+        if (event.pageX == null && event.clientX != null) {
+            eventDoc = (event.target && event.target.ownerDocument) || document;
+            doc = eventDoc.documentElement;
+            body = eventDoc.body;
 
-    document.Form1.posx.value = posX;
-    document.Form1.posy.value = posY;
+            event.pageX = event.clientX +
+              (doc && doc.scrollLeft || body && body.scrollLeft || 0) -
+              (doc && doc.clientLeft || body && body.clientLeft || 0);
+            event.pageY = event.clientY +
+              (doc && doc.scrollTop  || body && body.scrollTop  || 0) -
+              (doc && doc.clientTop  || body && body.clientTop  || 0 );
+        }
 
-    var t = setTimeout(mouse_position,100);
-    console.log(t);
-}*/
+    }
+})();
