@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace SolarSystem.Models
 {
-    public class Languages
+    public class Language
     {
         private int _id;
         private string _name;
         private string _culture;
         private ICollection<StringResources> _stringResources;
 
-        public Languages()
+        public Language()
         {
             StringResources = new HashSet<StringResources>();
         }

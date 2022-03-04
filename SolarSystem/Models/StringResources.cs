@@ -17,7 +17,7 @@ namespace SolarSystem.Models
         private int? _languageId;
         private string _name;
         private string _value;
-        private Languages _languages;
+        private Language _languages;
         #endregion
 
         #region Properties
@@ -41,7 +41,7 @@ namespace SolarSystem.Models
             get { return _value; }
             set { _value = value; }
         }
-        public Languages Languages
+        public Language Languages
         {
             get { return _languages; }
             set { _languages = value; }
