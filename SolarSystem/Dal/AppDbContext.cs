@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SolarSystem.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,10 +14,19 @@ namespace SolarSystem.Dal
     /// </summary>
     public class AppDbContext : DbContext
     {
+        #region fields
+        private DbSet<Language> _languages;
+        private DbSet<StringResources> _stringResources;
+        #endregion
+
+        #region Constructor
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
 
         }
+        #endregion
+
+        #region Methods
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
@@ -24,5 +34,20 @@ namespace SolarSystem.Dal
                 optionsBuilder.UseSqlServer("name=DefaultConnection");
             }
         }
+        #endregion
+
+        #region Properties
+        public DbSet<Language>  Languages
+        {
+            get { return _languages; }
+            set { _languages = value; }
+        }
+            
+        public DbSet<StringResources> StringResources
+        {
+            get { return _stringResources; }
+            set { _stringResources = value; }
+        }
+        #endregion
     }
 }

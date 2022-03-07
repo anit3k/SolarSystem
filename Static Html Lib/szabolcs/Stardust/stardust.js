@@ -1,4 +1,3 @@
-var frame = document.getElementById("stardust-container");
 //Generate a random number between 1000 and 1200 for the stars
 var maxStar = Math.floor( Math.random() * 1200 )+ 1000;
 
@@ -13,25 +12,17 @@ for (var starcounter = 0; starcounter < maxStar; starcounter++) {
     
 }
 
-(function() {
-    document.onmousemove = handleMouseMove;
-    function handleMouseMove(event) {
-        var eventDoc, doc, body;
+function mouse_position()
+{
+    var e = window.event;
 
-        event = event || window.event;
+    var posX = e.clientX;
+    var posY = e.clientY;
 
-        if (event.pageX == null && event.clientX != null) {
-            eventDoc = (event.target && event.target.ownerDocument) || document;
-            doc = eventDoc.documentElement;
-            body = eventDoc.body;
+    console.log(posX);
+    console.log(posY);
 
-            event.pageX = event.clientX +
-              (doc && doc.scrollLeft || body && body.scrollLeft || 0) -
-              (doc && doc.clientLeft || body && body.clientLeft || 0);
-            event.pageY = event.clientY +
-              (doc && doc.scrollTop  || body && body.scrollTop  || 0) -
-              (doc && doc.clientTop  || body && body.clientTop  || 0 );
-        }
-
-    }
-})();
+    setTimeout(mouse_position,100);
+    
+}
+mouse_position();
