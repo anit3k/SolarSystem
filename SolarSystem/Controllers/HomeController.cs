@@ -6,15 +6,14 @@ using System;
 
 namespace SolarSystem.Controllers
 {
-    public class HomeController : BaseController
+    public class HomeController : Controller /* : BaseController*/
     {
-        public HomeController(ILanguageService languageService, ILocalizationService localizationService) : base(languageService, localizationService)
+        public HomeController(ILanguageService languageService, ILocalizationService localizationService) /*: base(languageService, localizationService)*/
         {
         }
 
         public IActionResult Index()
         {
-            ViewData["Test"] = Localize("index.greeting");
             return View();
         }
 
