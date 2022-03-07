@@ -1,3 +1,6 @@
+*{
+    
+}
 /*MAIN PAGE*/
 /*Solar System*/
 body{
@@ -10,6 +13,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    cursor: url(./cursor.png), auto;
 }
 .solar-system-container{
     position: absolute;
@@ -17,87 +21,139 @@ body{
     left: 0;
     width: 100%;
     height: calc(100vh - 80px);
-    background: rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    /*background: rgba(0, 0, 0, 0.3);*/
 }
 .planets-container{
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation-name: orbitRotate;
+   
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 .planets-nav{
+    top: 50%;
+    left: 50%;
     padding: 10px;
-    height: 5vw;
-    width: 5vw;
+    box-sizing: content-box;
     border-radius: 50%;
     transform: translate(-50%, -50%);
     /*background: #666;*/
+    
 }
 .planet-1{
     position: relative;
-    left: 0;
-    height: 13vw;
-    width: 13vw;
+    /*left: 0;*/
+    height: 15vw;
+    width: 15vw;
 }
 .planet-2{
     position: relative;
-    left: -100%;
-    height: 2vw;
-    width: 2vw;
+    /*left: -100%;*/
+    height: 1.5vw;
+    width: 20vw;
 }
 .planet-3{
     position: relative;
-    left: -200%;
-    height: 7vw;
-    width: 7vw;
+    /* left: -200%; */
+    height: 3vw;
+    width: 28vw;
+     animation-duration: 22.5s;
 }
 .planet-4{
     position: relative;
-    left: -300%;
-    height: 4vw;
-    width: 4vw;
+    /* left: -300%; */
+    height: 3vw;
+    width: 36vw;
+     animation-duration: 3.65s;
 }
 .planet-5{
     position: relative;
-    left: -400%;
-    height: 3vw;
-    width: 3vw;
+    /* left: -400%; */
+    height: 2.5vw;
+    width: 43vw;
+     animation-duration: 68.7s;
 }
 .planet-6{
     position: relative;
-    left: -500%;
-    height: 8vw;
-    width: 8vw;
+    /* left: -500%; */
+    height: 5vw;
+    width: 48vw;
+     animation-duration: 12s;
 }
 .planet-7{
     position: relative;
-    left: -600%;
-    height: 8vw;
-    width: 8vw;
+    /* left: -600%; */
+    height: 4vw;
+    width: 69vw;
+     animation-duration: 29s;
 }
 .planet-8{
     position: relative;
-    left: -700%;
+    /* left: -700%; */
     height: 4vw;
-    width: 4vw;
+    width: 80vw;
+     animation-duration: 84s;
 }
 .planet-9{
     position: relative;
-    left: -800%;
-    height: 4vw;
-    width: 4vw;
+    /* left: -800%; */
+    height: 3vw;
+    width: 88vw;
+     animation-duration: 16.5s;
 }
 .planet-10{
     position: relative;
-    left: -900%;
+    /* left: -900%; */
     height: 2vw;
-    width: 7vw;
+    width: 95vw;
+    animation-duration: 24.8s;
 }
 .planets-container img{
     height: 100%;
 }
+.planets-container img:hover{
+    height: 100%;
+    border: 2px dotted rgb(173, 48, 231);
+    border-radius: 50%;
+    box-sizing: content-box;
+    padding: 10px;
+}
+.pc-2{
+    animation-duration: 8.8s;
+}
+.pc-3{
+    animation-duration: 22.5s;
+}
+.pc-4{
+    animation-duration: 36.5s;
+}
+.pc-5{
+    animation-duration: 68.7s;
+}
+.pc-6{
+    animation-duration: 438.3s;
+}
+.pc-7{
+    animation-duration: 1059.2s;
+}
+.pc-8{
+    animation-duration: 3068.1s;
+}
+.pc-9{
+    animation-duration: 6026.6s;
+}
+.pc-10{
+    animation-duration: 9058.2s;
+}
 /*Planet Titles*/
 .planet-titles-bg{
-    background: rgba(40, 40, 40, 0.6);
+    /*background: rgba(40, 40, 40, 0.6);*/
+    background-image: linear-gradient(transparent, rgb(0 0 0 / 80%) 60%);    
 }
 .planet-titles-container{
     width: 100vw;
@@ -110,4 +166,25 @@ body{
 }
 .planet-titles{
     display: block;
+    padding: 0 10px;
+    /*cursor: pointer;*/
+    cursor: url(cursor.png) !important;
+}
+.planet-titles:hover{
+    background-image: linear-gradient(transparent, rgba(51, 51, 51, 0.6) 10%);
+    height: 120px;
+    line-height: 120px;
+    transform: translate(0, -20px);
+    border-bottom: 5px solid rgb(173, 48, 231);
+    padding: 0 20px;
+    font-size: 24px;
+}
+
+@keyframes orbitRotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }
+
+  body {
+    cursor: url('cursor.png'), auto;
 }

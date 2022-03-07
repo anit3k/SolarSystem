@@ -52,18 +52,33 @@ setInterval(function() {
         console.log(actPositionX +","+ actPositionY);
         console.log(getMouseX(), getMouseY());
 
-        if ((actPositionX <= getMouseX()+100 && actPositionY <= getMouseY()+100) || (actPositionX <= getMouseX()-100 && actPositionY <= getMouseY()-100)) 
+       /* if ((actPositionY <= getMouseY()+100 && actPositionX <= getMouseX()+100) || (actPositionY >= getMouseY()-100 && actPositionX >= getMouseX()-100)) 
         {
             stars[i].style.background = "yellow";    
         }
-        else if ((actPositionY <= getMouseY()-100 && actPositionX <= getMouseX()-100) || (actPositionY <= getMouseY()+100 && actPositionX <= getMouseX()+100))
+        else if ((actPositionY <= getMouseY()+100 && actPositionX <= getMouseX()-100) || (actPositionY >= getMouseY()-100 && actPositionX >= getMouseX()+100))
         {
-            stars[i].style.background = "white";
+            stars[i].style.background = "yellow";
         }
-        else
+        else{
+            stars[i].style.background = "white";
+        }*/
+        if (((actPositionY <= getMouseY()+100 && actPositionY >= getMouseY()+0) && (actPositionX <= getMouseX()+100 && actPositionX >= getMouseX()+0))) 
         {
+            stars[i].style.background = "yellow";    
+        }
+        else if (((actPositionY >= getMouseY()-100 && actPositionY <= getMouseY()+0) && (actPositionX >= getMouseX()-100 && actPositionX <= getMouseX()+0))) 
+        {
+            stars[i].style.background = "green";    
+        }
+        //
+        else if (((actPositionY >= getMouseY()-100 && actPositionY <= getMouseY()+0) && (actPositionX >= getMouseX()-100 && actPositionX <= getMouseX()+0))) 
+        {
+            stars[i].style.background = "green";    
+        }
+        else{
             stars[i].style.background = "white";
         }
     }
    
-  }, 1000);
+  }, 10);
