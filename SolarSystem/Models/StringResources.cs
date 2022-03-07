@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,6 +27,7 @@ namespace SolarSystem.Models
             get { return _id; }
             set { _id = value; }
         }
+        [Column("language_id")]
         public int? LanguageId
         {
             get { return _languageId; }
