@@ -1,8 +1,8 @@
-﻿using SolarSystem.Services;
-using Microsoft.AspNetCore.Html;
-using Microsoft.AspNetCore.Mvc.Razor.Internal;
-using System.Threading;
+﻿using Microsoft.AspNetCore.Html;
 using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using SolarSystem.Services;
+using System.Threading;
 
 namespace SolarSystem.Models
 {
@@ -14,16 +14,16 @@ namespace SolarSystem.Models
     /// <typeparam name="TModel"></typeparam>
     public abstract class CustomBaseViewPage<TModel> : RazorPage<TModel>
     {
-        [RazorInject]
-        public ILanguageService LanguageService { get; set; }
+        #region fields
+        private ILanguageService _languageService;
+        private ILocalizationService _localizationService;
+        #endregion
 
-        [RazorInject]
-        public ILocalizationService LocalizationService { get; set; }
-
+        #region Delegate "pointer"
         public delegate HtmlString Localizer(string resourceKey, params object[] args);
         private Localizer _localizer;
 
-        public Localizer Localize
+        public Localizer GetString
         {
             get
             {
@@ -52,8 +52,21 @@ namespace SolarSystem.Models
                 return _localizer;
             }
         }
-    }
+        #endregion
 
-    //public abstract class CustomBaseViewPage : CustomBaseViewPage<dynamic>
-    //{ }
+        #region Properties
+        [RazorInject]
+        public ILanguageService LanguageService
+        {
+            get { return _languageService; }
+            set { _languageService = value; }
+        }
+        [RazorInject]
+        public ILocalizationService LocalizationService
+        {
+            get { return _localizationService; }
+            set { _localizationService = value; }
+        }
+        #endregion
+    }    
 }

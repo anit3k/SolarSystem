@@ -1,17 +1,12 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
-using SolarSystem.Services;
 using System;
 
 namespace SolarSystem.Controllers
 {
-    public class HomeController : Controller /* : BaseController*/
+    public class HomeController : Controller 
     {
-        public HomeController(ILanguageService languageService, ILocalizationService localizationService) /*: base(languageService, localizationService)*/
-        {
-        }
-
         public IActionResult Index()
         {
             return View();
