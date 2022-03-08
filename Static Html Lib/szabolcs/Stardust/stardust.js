@@ -41,9 +41,6 @@ setInterval(function() {
     var stars = document.getElementsByTagName("span");
     var counter = 50;
 
-
- 
-
     for (var i = 0; i < stars.length; i++)
     {
 
