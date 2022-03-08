@@ -51,8 +51,8 @@ setInterval(function() {
         var actPositionY = stars[i].style.top;
         actPositionX = Number(actPositionX.substring(0, actPositionX.length-2));
         actPositionY = Number(actPositionY.substring(0, actPositionY.length-2));
-        //Checking the mouse and star positions. Not needed.
-        /*console.log(actPositionX +","+ actPositionY);
+        /*Checking the mouse and star positions. Not needed.
+        console.log(actPositionX +","+ actPositionY);
         console.log(getMouseX(), getMouseY());*/
 
         if (((actPositionY <= getMouseY()+counter && actPositionY >= getMouseY()+0) && (actPositionX <= getMouseX()+counter && actPositionX >= getMouseX()+0))) 
