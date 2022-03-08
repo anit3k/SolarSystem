@@ -25,7 +25,52 @@ namespace SolarSystem.Services
 
                 new StringResources{LanguageId = 1, Name = "index.hello", Value = "Hello"},
                 new StringResources{LanguageId = 2, Name = "index.hello", Value = "Szia"},
-                new StringResources{LanguageId = 3, Name = "index.hello", Value = "Davs"}
+                new StringResources{LanguageId = 3, Name = "index.hello", Value = "Davs"},
+
+                new StringResources{LanguageId = 1, Name = "index.sun", Value = "Sun"},
+                new StringResources{LanguageId = 2, Name = "index.sun", Value = "Nap"},
+                new StringResources{LanguageId = 3, Name = "index.sun", Value = "-"},
+
+                new StringResources{LanguageId = 1, Name = "index.mercury", Value = "Mercury"},
+                new StringResources{LanguageId = 2, Name = "index.mercury", Value = "Merkúr"},
+                new StringResources{LanguageId = 3, Name = "index.mercury", Value = "-"},
+
+                new StringResources{LanguageId = 1, Name = "index.venus", Value = "Venus"},
+                new StringResources{LanguageId = 2, Name = "index.venus", Value = "Vénusz"},
+                new StringResources{LanguageId = 3, Name = "index.venus", Value = "-"},
+
+                new StringResources{LanguageId = 1, Name = "index.earth", Value = "Earth"},
+                new StringResources{LanguageId = 2, Name = "index.earth", Value = "Föld"},
+                new StringResources{LanguageId = 3, Name = "index.earth", Value = "-"},
+
+                new StringResources{LanguageId = 1, Name = "index.moon", Value = "Moon"},
+                new StringResources{LanguageId = 2, Name = "index.moon", Value = "Hold"},
+                new StringResources{LanguageId = 3, Name = "index.moon", Value = "-"},
+
+                new StringResources{LanguageId = 1, Name = "index.mars", Value = "Mars"},
+                new StringResources{LanguageId = 2, Name = "index.mars", Value = "Mars"},
+                new StringResources{LanguageId = 3, Name = "index.mars", Value = "-"},
+
+                new StringResources{LanguageId = 1, Name = "index.jupiter", Value = "Jupiter"},
+                new StringResources{LanguageId = 2, Name = "index.jupiter", Value = "Jupiter"},
+                new StringResources{LanguageId = 3, Name = "index.jupiter", Value = "-"},
+
+                new StringResources{LanguageId = 1, Name = "index.saturn", Value = "Saturn"},
+                new StringResources{LanguageId = 2, Name = "index.saturn", Value = "Szaturnusz"},
+                new StringResources{LanguageId = 3, Name = "index.saturn", Value = "-"},
+
+                new StringResources{LanguageId = 1, Name = "index.uranus", Value = "Uranus"},
+                new StringResources{LanguageId = 2, Name = "index.uranus", Value = "Uránusz"},
+                new StringResources{LanguageId = 3, Name = "index.uranus", Value = "-"},
+
+                new StringResources{LanguageId = 1, Name = "index.neptune", Value = "Neptune"},
+                new StringResources{LanguageId = 2, Name = "index.neptune", Value = "Neptunusz"},
+                new StringResources{LanguageId = 3, Name = "index.neptune", Value = "-"},
+
+                new StringResources{LanguageId = 1, Name = "index.pluto", Value = "Pluto"},
+                new StringResources{LanguageId = 2, Name = "index.pluto", Value = "Pluto"},
+                new StringResources{LanguageId = 3, Name = "index.pluto", Value = "-"}
+
             };
         }
         #endregion

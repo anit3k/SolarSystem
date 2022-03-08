@@ -1,0 +1,226 @@
+/*MAIN PAGE*/
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://wallpapercave.com/wp/wp2742875.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    cursor: url('../lib/Images/cursor.png'), auto;
+}
+
+/*Solar System Model*/
+.solar-system-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 80px);
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.planets-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+
+    /*position: initial;
+    border-radius: 50%;
+    border: 2px solid #ffffff6b;*/
+}
+.planets-nav{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-sizing: content-box;
+    border-radius: 50%;
+    /*transform: translate(-50%, -50%);*/
+    border-radius: 50%;
+    border: 2px solid #ffffff6b;
+    
+    animation-name: orbitRotate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/*Planat Sizeing*/
+.planet-1 {
+    width: 15vw;
+    height: 15vw;
+    top: calc(50% - 15vh/2);
+    left: calc(50% - 15vw/2);
+}
+.planet-1 img{
+    height: 15vw;
+    transform: translate(0,0) !important;
+}
+.planet-1 img:hover{
+    transform: translate(-14px,-14px) !important;
+}
+.planet-2 {
+    width: 20vw;
+    height: 20vw;
+    top: calc(50% - 20vh/2);
+    left: calc(50% - 20vw/2);
+}
+.planet-2 img{
+    height: 1.5vw;
+}
+.planet-3 {
+    width: 28vw;
+    height: 28vw;
+    top: calc(50% - 28vh/2);
+    left: calc(50% - 28vw/2);
+}
+.planet-3 img{
+    height: 3vw;
+}
+.planet-4 {
+    width: 36vw;
+    height: 36vw;
+    top: calc(50% - 36vh/2);
+    left: calc(50% - 36vw/2);
+}
+.planet-4 img{
+    height: 3vw;
+}
+.planet-5 {
+    width: 43vw;
+    height: 43vw;
+    top: calc(50% - 43vh/2);
+    left: calc(50% - 43vw/2);
+}
+.planet-5 img{
+    height: 2.5vw;
+}
+.planet-6 {
+    width: 48vw;
+    height: 48vw;
+    top: calc(50% - 48vh/2);
+    left: calc(50% - 48vw/2);
+}
+.planet-6 img{
+    height: 5vw;
+}
+.planet-7 {
+    width: 69vw;
+    height: 69vw;
+    top: calc(50% - 69vh/2);
+    left: calc(50% - 69vw/2);
+}
+.planet-7 img{
+    height: 4vw;
+}
+.planet-8 {
+    width: 80vw;
+    height: 80vw;
+    top: calc(50% - 80vh/2);
+    left: calc(50% - 80vw/2);
+}
+.planet-8 img{
+    height: 4vw;
+}
+.planet-9 {
+    width: 88vw;
+    height: 88vw;
+    top: calc(50% - 88vh/2);
+    left: calc(50% - 88vw/2);
+}
+.planet-9 img{
+    height: 3vw;
+}
+.planet-10 {
+    width: 95vw;
+    height: 95vw;
+    top: calc(50% - 95vh/2);
+    left: calc(50% - 95vw/2);
+}
+.planet-10 img{
+    height: 2vw;
+}
+.planets-container img{
+    /*height: 100%;*/
+    margin: auto;
+    display: block;
+    transform: translate(0, -50%);
+}
+.planets-container img:hover{
+    border: 4px dotted rgb(227, 168, 255);
+    border-radius: 50%;
+    box-sizing: content-box;
+    padding: 10px;
+    background: rgba(58, 6, 45, 0.6);
+    box-shadow: 5px 5px 8px #333;
+}
+
+/*Solar System Animation Timeing*/
+/*-----------------------------*/
+
+.planet-2{animation-duration: 8.8s;}
+.planet-3{animation-duration: 22.5s;}
+.planet-4{animation-duration: 36.5s;}
+.planet-5{animation-duration: 68.7s;}
+.planet-6{animation-duration: 438.3s;}
+.planet-7{animation-duration: 1059.2s;}
+.planet-8{animation-duration: 3068.1s;}
+.planet-9{animation-duration: 6026.6s;}
+.planet-10{animation-duration: 9058.2s;}
+
+
+
+/*Planet Titles*/
+.planet-titles-bg{background-image: linear-gradient(transparent, rgb(0 0 0 / 80%) 60%);}
+.planet-titles-container{
+    width: 100vw;
+    height: 100px;
+    line-height: 100px;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+}
+.planet-titles{
+    display: block;
+    padding: 0 10px;
+    cursor: url(cursor.png) !important;
+}
+
+
+/*.planet-3:hover .planat-title-3,
+.planet-4:hover .planat-title-4,
+.planet-5:hover .planat-title-5,
+.planet-6:hover .planat-title-6,
+.planet-7:hover .planat-title-7,
+.planet-8:hover .planat-title-8,
+.planet-9:hover .planat-title-9,
+.planet-10:hover .planat-title-10,*/
+.planet-titles:hover{
+    background-image: linear-gradient(transparent, rgba(51, 51, 51, 0.6) 10%);
+    height: 120px;
+    line-height: 120px;
+    transform: translate(0, -20px);
+    border-bottom: 5px solid rgb(173, 48, 231);
+    padding: 0 20px;
+    font-size: 24px;
+}
+
+@keyframes orbitRotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+/*Details*/
+
+#details-frame{
+    display: none;
+    
+}
