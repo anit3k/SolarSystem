@@ -1,5 +1,5 @@
-//Generate a random number between 1000 and 1200 for the stars
-var maxStar = Math.floor( Math.random() * 1200 )+ 1000;
+//Generate a random number between 2000 and 2500 for the stars
+var maxStar = Math.floor( Math.random() * 2500 )+ 2000;
 
 //Generate random amount of stars with random positions
 for (var starcounter = 0; starcounter < maxStar; starcounter++) {
@@ -23,7 +23,7 @@ document.addEventListener('mouseenter', onMouseUpdate, false);
 function onMouseUpdate(e) {
   x = e.pageX;
   y = e.pageY;
-  console.log(x, y);
+  //console.log(x, y);
 }
 
 function getMouseX() {
@@ -39,6 +39,8 @@ function getMouseY() {
 const element = document.getElementById("stardust-container");
 setInterval(function() {
     var stars = document.getElementsByTagName("span");
+    var counter = 50;
+
 
  
 
@@ -49,36 +51,61 @@ setInterval(function() {
         var actPositionY = stars[i].style.top;
         actPositionX = Number(actPositionX.substring(0, actPositionX.length-2));
         actPositionY = Number(actPositionY.substring(0, actPositionY.length-2));
-        console.log(actPositionX +","+ actPositionY);
-        console.log(getMouseX(), getMouseY());
+        //Checking the mouse and star positions. Not needed.
+        /*console.log(actPositionX +","+ actPositionY);
+        console.log(getMouseX(), getMouseY());*/
 
-       /* if ((actPositionY <= getMouseY()+100 && actPositionX <= getMouseX()+100) || (actPositionY >= getMouseY()-100 && actPositionX >= getMouseX()-100)) 
+        if (((actPositionY <= getMouseY()+counter && actPositionY >= getMouseY()+0) && (actPositionX <= getMouseX()+counter && actPositionX >= getMouseX()+0))) 
         {
-            stars[i].style.background = "yellow";    
+            if((actPositionX + counter) >= (window.innerWidth - 15) || (actPositionY + counter) >= (window.innerHeight - 15))
+            {
+                stars[i].style.left = (actPositionX - counter) + "px";
+                stars[i].style.top = (actPositionY - counter) + "px";
+            }
+            else
+            {
+                stars[i].style.left = (actPositionX + counter) + "px";
+                stars[i].style.top = (actPositionY + counter) + "px";
+            }
         }
-        else if ((actPositionY <= getMouseY()+100 && actPositionX <= getMouseX()-100) || (actPositionY >= getMouseY()-100 && actPositionX >= getMouseX()+100))
+        else if (((actPositionY >= getMouseY()-counter && actPositionY <= getMouseY()+0) && (actPositionX >= getMouseX()-counter && actPositionX <= getMouseX()+0))) 
         {
-            stars[i].style.background = "yellow";
+            if((actPositionX + counter) <= (window.innerWidth - 15) || (actPositionY + counter) <= (window.innerHeight - 15))
+            {
+                stars[i].style.left = (actPositionX + counter) + "px";
+                stars[i].style.top = (actPositionY + counter) + "px";
+            }
+            else
+            {
+                stars[i].style.left = (actPositionX - counter) + "px";
+                stars[i].style.top = (actPositionY - counter) + "px"; 
+            }
         }
-        else{
-            stars[i].style.background = "white";
-        }*/
-        if (((actPositionY <= getMouseY()+100 && actPositionY >= getMouseY()+0) && (actPositionX <= getMouseX()+100 && actPositionX >= getMouseX()+0))) 
+        else if (((actPositionY <= getMouseY()+counter && actPositionY >= getMouseY()+0) && (actPositionX >= getMouseX()-counter && actPositionX <= getMouseX()+0))) 
         {
-            stars[i].style.background = "blue";    
+            if((actPositionX + counter) <= (window.innerWidth - 15) || (actPositionY + counter) >= (window.innerHeight - 15))
+            {
+                stars[i].style.left = (actPositionX - counter) + "px";
+                stars[i].style.top = (actPositionY + counter) + "px";
+            }
+            else
+            {
+                stars[i].style.left = (actPositionX + counter) + "px";
+                stars[i].style.top = (actPositionY - counter) + "px"; 
+            }
         }
-        else if (((actPositionY >= getMouseY()-100 && actPositionY <= getMouseY()+0) && (actPositionX >= getMouseX()-100 && actPositionX <= getMouseX()+0))) 
+        else if (((actPositionY >= getMouseY()-counter && actPositionY <= getMouseY()+0) && (actPositionX <= getMouseX()+counter && actPositionX >= getMouseX()+0))) 
         {
-            stars[i].style.background = "blue";    
-        }
-        //
-        else if (((actPositionY <= getMouseY()+100 && actPositionY >= getMouseY()+0) && (actPositionX >= getMouseX()-100 && actPositionX <= getMouseX()+0))) 
-        {
-            stars[i].style.background = "blue"; 
-        }
-        else if (((actPositionY >= getMouseY()-100 && actPositionY <= getMouseY()+0) && (actPositionX <= getMouseX()+100 && actPositionX >= getMouseX()+0))) 
-        {
-            stars[i].style.background = "blue"; 
+            if((actPositionX + counter) >= (window.innerWidth - 15) || (actPositionY + counter) <= (window.innerHeight - 15))
+            {
+                stars[i].style.left = (actPositionX + counter) + "px";
+                stars[i].style.top = (actPositionY - counter) + "px";
+            }
+            else
+            {
+                stars[i].style.left = (actPositionX - counter) + "px";
+                stars[i].style.top = (actPositionY + counter) + "px";
+            }
         } 
         else
         {
