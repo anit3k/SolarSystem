@@ -37,8 +37,12 @@ namespace SolarSystem
         {
             // .AddScoped -> Scooped lifetime services are created once per Http request. but uses the same instance in other calls within the same web request
             // This will add language and localization to be used every where in the application, the services uses the repository pattern.
-            services.AddScoped<ILanguageService, LanguageService>();
-            services.AddScoped<ILocalizationService, LocalizationService>();
+            //services.AddScoped<ILanguageService, LanguageService>();
+            //services.AddScoped<ILocalizationService, LocalizationService>();
+
+            // mockup version of the aboved
+            services.AddScoped<ILanguageService, MockLanguageService>();
+            services.AddScoped<ILocalizationService, MockLocalizationService>();
 
             // one of the services that comes in the EF Core Nuget package, basically this is how we map the 
             // context class into EF and set the connection string read from appsettings.json file
