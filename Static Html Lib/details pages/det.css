@@ -1,23 +1,36 @@
 body{
-    background-image: url("background.jpg");
+    
+    background-image: url(background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    border: solid rgb(163, 18, 163) 15px;
+    border-radius: 10px;
 
 }
+
 .detail-planet{
     width: 100%;
     
 }
-p{
-    color: aliceblue;
+.detail-text{
+    color: rgb(183, 235, 236);
+    background-color: rgba(128, 128, 128, 0.555);
 }
-.detail-subtitle{
-    color: aliceblue;
+.detail-facts{
+    color: rgb(183, 235, 236);
+    background-color: rgba(128, 128, 128, 0.555);
 }
+
 .detail-structure{
     width: 40%;
     margin: auto;
     display: block;
     
+}
+.detail-text-subtitle{
+    color: rgb(99, 247, 247);
+}
+.detail-facts-subtitle{
+    color: rgb(99, 247, 247);
 }
