@@ -1,25 +1,24 @@
-body{
-    
-    background-image: url(background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    border: solid rgb(12, 3, 61) 15px;
-    border-radius: 10px;
 
-}
 
 .detail-planet{
     width: 100%;
     
+    
 }
 .detail-text{
+    
     color: rgb(183, 235, 236);
     background-color: rgba(128, 128, 128, 0.555);
+    border: solid black;
+    border-radius:  5px;
+    padding: 20px 20px 20px 20px;
 }
 .detail-facts{
     color: rgb(183, 235, 236);
     background-color: rgba(128, 128, 128, 0.555);
+    border: solid black;
+    border-radius:  5px;
+    padding: 20px 20px 20px 20px;
 }
 
 .detail-structure{
