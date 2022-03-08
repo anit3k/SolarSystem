@@ -72,9 +72,9 @@ setInterval(function() {
             stars[i].style.background = "green";    
         }
         //
-        else if (((actPositionY >= getMouseY()-100 && actPositionY <= getMouseY()+0) && (actPositionX >= getMouseX()-100 && actPositionX <= getMouseX()+0))) 
+        else if (((actPositionY <= getMouseY()-100 && actPositionY >= getMouseY()+0) && (actPositionX >= getMouseX()-100 && actPositionX <= getMouseX()+0))) 
         {
-            stars[i].style.background = "green";    
+            stars[i].style.background = "blue";  
         }
         else{
             stars[i].style.background = "white";
