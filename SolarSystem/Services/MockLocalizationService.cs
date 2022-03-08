@@ -17,10 +17,15 @@ namespace SolarSystem.Services
         #region Constructor
         public MockLocalizationService()
         {
-            StringResources = new List<StringResources> { 
+            StringResources = new List<StringResources> {
+                                
                 new StringResources{LanguageId = 1, Name = "index.greeting", Value = "Hello and welcome to our solar system model"},
                 new StringResources{LanguageId = 2, Name = "index.greeting", Value = "Üdvözöljük a nap rendszerunk modeljeben"},
-                new StringResources{LanguageId = 3, Name = "index.greeting", Value = "Hej og velkommen til vores solsystemmodel"}
+                new StringResources{LanguageId = 3, Name = "index.greeting", Value = "Hej og velkommen til vores solsystemmodel"},
+
+                new StringResources{LanguageId = 1, Name = "index.hello", Value = "Hello"},
+                new StringResources{LanguageId = 2, Name = "index.hello", Value = "Szia"},
+                new StringResources{LanguageId = 3, Name = "index.hello", Value = "Davs"}
             };
         }
         #endregion
