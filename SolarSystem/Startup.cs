@@ -16,6 +16,7 @@ namespace SolarSystem
     {
         #region fields
         private IConfiguration _configuration;
+        private IWebHostEnvironment CurrentEnvironment { get; set; }
         #endregion
 
 
@@ -25,9 +26,10 @@ namespace SolarSystem
         /// used to get the connection string
         /// </summary>
         /// <param name="configuration"></param>
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, IWebHostEnvironment currentEnviroment)
         {
             Configuration = configuration;
+            CurrentEnvironment = currentEnviroment;
         }
         #endregion
 
@@ -37,12 +39,20 @@ namespace SolarSystem
         {
             // .AddScoped -> Scooped lifetime services are created once per Http request. but uses the same instance in other calls within the same web request
             // This will add language and localization to be used every where in the application, the services uses the repository pattern.
-            //services.AddScoped<ILanguageService, LanguageService>();
-            //services.AddScoped<ILocalizationService, LocalizationService>();
+            if (CurrentEnvironment.EnvironmentName == "DevelopmentDb") // if debug profile is set to Iss Express with Db
+            {
+                services.AddScoped<ILanguageService, LanguageService>();
+                services.AddScoped<ILocalizationService, LocalizationService>();
+            }
+            else // else run with mock-ups of the language and localization classes (normal debug - Iss Express and others)
+            {
+                // mock-up version of the above
+                services.AddScoped<ILanguageService, MockLanguageService>();
+                services.AddScoped<ILocalizationService, MockLocalizationService>();
 
-            // mockup version of the aboved
-            services.AddScoped<ILanguageService, MockLanguageService>();
-            services.AddScoped<ILocalizationService, MockLocalizationService>();
+            }
+
+
 
             // one of the services that comes in the EF Core Nuget package, basically this is how we map the 
             // context class into EF and set the connection string read from appsettings.json file
