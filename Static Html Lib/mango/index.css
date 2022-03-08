@@ -1,8 +1,4 @@
-*{
-    
-}
 /*MAIN PAGE*/
-/*Solar System*/
 body{
     margin: 0;
     padding: 0;
@@ -15,6 +11,8 @@ body{
     background-size: cover;
     cursor: url(./cursor.png), auto;
 }
+
+/*Solar System Model*/
 .solar-system-container{
     position: absolute;
     top: 0;
@@ -22,7 +20,6 @@ body{
     width: 100%;
     height: calc(100vh - 80px);
     overflow: hidden;
-    /*background: rgba(0, 0, 0, 0.3);*/
 }
 .planets-container{
     position: absolute;
@@ -31,87 +28,59 @@ body{
     width: 100%;
     height: 100%;
     animation-name: orbitRotate;
-   
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 .planets-nav{
+    position: relative;
     top: 50%;
     left: 50%;
     padding: 10px;
     box-sizing: content-box;
     border-radius: 50%;
     transform: translate(-50%, -50%);
-    /*background: #666;*/
-    
 }
+
+/*Planat Sizeing*/
 .planet-1{
-    position: relative;
-    /*left: 0;*/
     height: 15vw;
     width: 15vw;
 }
 .planet-2{
-    position: relative;
-    /*left: -100%;*/
     height: 1.5vw;
     width: 20vw;
 }
 .planet-3{
-    position: relative;
-    /* left: -200%; */
     height: 3vw;
     width: 28vw;
-     animation-duration: 22.5s;
 }
 .planet-4{
-    position: relative;
-    /* left: -300%; */
     height: 3vw;
     width: 36vw;
-     animation-duration: 3.65s;
 }
 .planet-5{
-    position: relative;
-    /* left: -400%; */
     height: 2.5vw;
     width: 43vw;
-     animation-duration: 68.7s;
 }
 .planet-6{
-    position: relative;
-    /* left: -500%; */
     height: 5vw;
     width: 48vw;
-     animation-duration: 12s;
 }
 .planet-7{
-    position: relative;
-    /* left: -600%; */
     height: 4vw;
     width: 69vw;
-     animation-duration: 29s;
 }
 .planet-8{
-    position: relative;
-    /* left: -700%; */
     height: 4vw;
     width: 80vw;
-     animation-duration: 84s;
 }
 .planet-9{
-    position: relative;
-    /* left: -800%; */
     height: 3vw;
     width: 88vw;
-     animation-duration: 16.5s;
 }
 .planet-10{
-    position: relative;
-    /* left: -900%; */
     height: 2vw;
-    width: 95vw;
-    animation-duration: 24.8s;
+    width: 95vw
 }
 .planets-container img{
     height: 100%;
@@ -123,38 +92,22 @@ body{
     box-sizing: content-box;
     padding: 10px;
 }
-.pc-2{
-    animation-duration: 8.8s;
-}
-.pc-3{
-    animation-duration: 22.5s;
-}
-.pc-4{
-    animation-duration: 36.5s;
-}
-.pc-5{
-    animation-duration: 68.7s;
-}
-.pc-6{
-    animation-duration: 438.3s;
-}
-.pc-7{
-    animation-duration: 1059.2s;
-}
-.pc-8{
-    animation-duration: 3068.1s;
-}
-.pc-9{
-    animation-duration: 6026.6s;
-}
-.pc-10{
-    animation-duration: 9058.2s;
-}
+
+/*Solar System Animation Timeing*/
+/*-----------------------------*/
+
+.pc-2{animation-duration: 8.8s;}
+.pc-3{animation-duration: 22.5s;}
+.pc-4{animation-duration: 36.5s;}
+.pc-5{animation-duration: 68.7s;}
+.pc-6{animation-duration: 438.3s;}
+.pc-7{animation-duration: 1059.2s;}
+.pc-8{animation-duration: 3068.1s;}
+.pc-9{animation-duration: 6026.6s;}
+.pc-10{animation-duration: 9058.2s;}
+
 /*Planet Titles*/
-.planet-titles-bg{
-    /*background: rgba(40, 40, 40, 0.6);*/
-    background-image: linear-gradient(transparent, rgb(0 0 0 / 80%) 60%);    
-}
+.planet-titles-bg{background-image: linear-gradient(transparent, rgb(0 0 0 / 80%) 60%);}
 .planet-titles-container{
     width: 100vw;
     height: 100px;
@@ -167,7 +120,6 @@ body{
 .planet-titles{
     display: block;
     padding: 0 10px;
-    /*cursor: pointer;*/
     cursor: url(cursor.png) !important;
 }
 .planet-titles:hover{
@@ -183,8 +135,4 @@ body{
 @keyframes orbitRotate {
     from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}
-  }
-
-  body {
-    cursor: url('cursor.png'), auto;
 }
