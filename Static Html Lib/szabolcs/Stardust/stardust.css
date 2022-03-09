@@ -15,12 +15,3 @@
     background-size: cover;
 }
 
-span{
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    background-color: #fff;
-    display: block;
-    border-radius: 50%;
-}
-
