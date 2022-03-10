@@ -76,7 +76,7 @@ setInterval(function()
                 stars[i].style.top = (actPositionY + counter) + "px";
                 starMove(); 
             }*/
-            starMove1(stars[i].id);
+            starMove4(stars[i].id);
             
         }
         //Top left corner of the mouse
@@ -97,7 +97,7 @@ setInterval(function()
                 stars[i].style.left = (actPositionX - counter) + "px";
                 stars[i].style.top = (actPositionY - counter) + "px"; 
             }*/
-            starMove1(stars[i].id);
+            starMove3(stars[i].id);
         }
         //Bottom left corner of the mouse
         else if (((actPositionY <= getMouseY()+counter && actPositionY >= getMouseY()+0) && (actPositionX >= getMouseX()-counter && actPositionX <= getMouseX()+0))) 
@@ -137,9 +137,8 @@ setInterval(function()
                 stars[i].style.left = (actPositionX - counter) + "px";
                 stars[i].style.top = (actPositionY + counter) + "px";
              }*/
-            starMove1(stars[i].id);
+            starMove2(stars[i].id);
         }
-
     }
    
   }, 10);
@@ -156,18 +155,18 @@ setInterval(function()
     id = setInterval(frame, 5);
     function frame()
     {
-      if (pos1 <= (pos1 + 50))
+      if (pos1 >= (pos1 + 50))
       {
         clearInterval(id);
-        //console.log(starId);
       }
       else
       {
-        pos1++; 
-        elem.style.top = pos1 + "px"; 
-        elem.style.left = pos1 + "px"; 
+        pos1--; 
+        elem.style.top = pos2 + "px"; 
+        elem.style.left = pos1 + "px";
+        //console.log("pos1: " + pos1);
       }
-      if (pos2 <= 50) 
+      if (pos2 >= (pos2 + 50)) 
       {
         clearInterval(id);
       } 
@@ -175,40 +174,45 @@ setInterval(function()
       {
         pos2++; 
         elem.style.top = pos2 + "px"; 
-        elem.style.left = pos2 + "px"; 
+        elem.style.left = pos1 + "px";
+        //console.log("pos2: " + pos2);
       }
     }
   }
-  
-  /*function starMove2(starId)
+
+  function starMove2(starId)
   {
     var id = null;
-    const elem = document.getElementById(starId);   
-    var pos1 = positionX;
-    var pos2 = positionY;
+    const elem = document.getElementById(starId);
+    var pos1 = elem.style.left;
+    var pos2 = elem.style.top;
+    pos1 = Number(pos1.substring(0, pos1.length-2));
+    pos2 = Number(pos2.substring(0, pos2.length-2));
     clearInterval(id);
     id = setInterval(frame, 5);
     function frame()
     {
-      if (pos1 <= 50)
+      if (pos1 >= (pos1 + 50))
       {
         clearInterval(id);
-      } 
+      }
       else
       {
         pos1++; 
-        elem.style.top = pos1 + "px"; 
-        elem.style.left = pos1 + "px"; 
+        elem.style.top = pos2 + "px"; 
+        elem.style.left = pos1 + "px";
+        //console.log("pos1: " + pos1);
       }
-      if (pos2 <= 50) 
+      if (pos2 >= (pos2 + 50)) 
       {
         clearInterval(id);
       } 
       else
       {
-        pos2++; 
+        pos2--; 
         elem.style.top = pos2 + "px"; 
-        elem.style.left = pos2 + "px"; 
+        elem.style.left = pos1 + "px";
+        //console.log("pos2: " + pos2);
       }
     }
   }
@@ -216,57 +220,64 @@ setInterval(function()
   function starMove3(starId)
   {
     var id = null;
-    const elem = document.getElementById(starId);   
-    var pos1 = positionX;
-    var pos2 = positionY;
+    const elem = document.getElementById(starId);
+    var pos1 = elem.style.left;
+    var pos2 = elem.style.top;
+    pos1 = Number(pos1.substring(0, pos1.length-2));
+    pos2 = Number(pos2.substring(0, pos2.length-2));
     clearInterval(id);
     id = setInterval(frame, 5);
     function frame()
     {
-      if (pos1 <= 50)
+      if (pos1 >= (pos1 + 50))
       {
         clearInterval(id);
-      } 
-      else
-      {
-        pos1++; 
-        elem.style.top = pos1 + "px"; 
-        elem.style.left = pos1 + "px"; 
       }
-      if (pos2 <= 50) 
+      else
+      {
+        pos1--; 
+        elem.style.top = pos2 + "px"; 
+        elem.style.left = pos1 + "px";
+        //console.log("pos1: " + pos1);
+      }
+      if (pos2 >= (pos2 + 50)) 
       {
         clearInterval(id);
       } 
       else
       {
-        pos2++; 
+        pos2--; 
         elem.style.top = pos2 + "px"; 
-        elem.style.left = pos2 + "px"; 
+        elem.style.left = pos1 + "px";
+        //console.log("pos2: " + pos2);
       }
     }
   }
 
-  function starMove3(starId)
+  function starMove4(starId)
   {
     var id = null;
-    const elem = document.getElementById(starId);   
-    var pos1 = positionX;
-    var pos2 = positionY;
+    const elem = document.getElementById(starId);
+    var pos1 = elem.style.left;
+    var pos2 = elem.style.top;
+    pos1 = Number(pos1.substring(0, pos1.length-2));
+    pos2 = Number(pos2.substring(0, pos2.length-2));
     clearInterval(id);
     id = setInterval(frame, 5);
     function frame()
     {
-      if (pos1 <= 50)
+      if (pos1 >= (pos1 + 50))
       {
         clearInterval(id);
-      } 
+      }
       else
       {
         pos1++; 
-        elem.style.top = pos1 + "px"; 
-        elem.style.left = pos1 + "px"; 
+        elem.style.top = pos2 + "px"; 
+        elem.style.left = pos1 + "px";
+        //console.log("pos1: " + pos1);
       }
-      if (pos2 <= 50) 
+      if (pos2 >= (pos2 + 50)) 
       {
         clearInterval(id);
       } 
@@ -274,7 +285,8 @@ setInterval(function()
       {
         pos2++; 
         elem.style.top = pos2 + "px"; 
-        elem.style.left = pos2 + "px"; 
+        elem.style.left = pos1 + "px";
+        //console.log("pos2: " + pos2);
       }
     }
-  }*/
+  }
