@@ -32,13 +32,19 @@
                         <li class="">
                             <form class="nav-item" asp-action="ChangeLanguage" asp-controller="Home" method="post">
                                 <input type="hidden" id="returnUrl" name="returnUrl" value="@returnUrl" />
-                                <select id="culture"
+                                <select class="lang-sel" id="culture"
                                         name="culture"
                                         class="form-control"
                                         onchange="this.form.submit();"
                                         asp-items="cultureItems"
                                         asp-for="@requestCulture.RequestCulture.UICulture.Name">
                                 </select>
+                                <div class="lang-select lang-sel">
+                                    <button class="btn-select" value=""></button>
+                                    <div class="b">
+                                        <ul id="a"></ul>
+                                    </div>
+                                </div>
                             </form>
                         </li>
                     </ul>
@@ -59,6 +65,7 @@
     </footer>
 
     <script src="~/lib/jquery/jquery.js"></script>
+    <script src="~/lib/jquery/language-image.js"></script>
     <script src="~/lib/bootstrap/js/bootstrap.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
