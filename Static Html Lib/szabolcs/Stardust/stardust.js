@@ -1,5 +1,7 @@
 //Generate a random number between 2000 and 2500 for the stars
 var maxStar = Math.floor( Math.random() * 500 )+ 500;
+
+
 //console.log(maxStar);
 //Generate random amount of stars with random positions
 for (var starcounter = 0; starcounter <= maxStar; starcounter++) 
@@ -12,6 +14,12 @@ for (var starcounter = 0; starcounter <= maxStar; starcounter++)
     star.style.top = positionY + "px";
     document.getElementById("stardust-container").appendChild(star);
     star.setAttribute("id", "star-" + starcounter);
+    var randPic = Math.floor( Math.random() * 5)+ 1;
+    console.log(randPic);
+    star.style.backgroundImage = "url(./Stars/star"+ randPic + ".png)";
+    var randSize = Math.floor( Math.random() * 14)+ 13;
+    star.style.width = randSize + "px";
+    star.style.height = randSize + "px";
 }
 
 //Getting the position of the mouse
