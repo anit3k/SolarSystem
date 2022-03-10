@@ -1,15 +1,40 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
+using SolarSystem.Dal;
+using SolarSystem.Models;
+using SolarSystem.Services;
+using SolarSystem.ViewModels;
 using System;
+using System.Linq;
 
 namespace SolarSystem.Controllers
 {
-    public class HomeController : Controller 
+    public class HomeController : Controller
     {
+        private readonly IPlanetService _planetService;
+           
+        public HomeController(IPlanetService planetService)
+        {
+            _planetService = planetService;
+        }
+
         public IActionResult Index()
         {
-            return View();
+            PlanetListViewModel planets = new PlanetListViewModel();
+            planets.PlanetList = _planetService.GetPlanets();
+
+            return View(planets);
+        }
+
+        public IActionResult Detail(int id)
+        {
+            PlanetListViewModel planets = new PlanetListViewModel();
+            planets.PlanetList = _planetService.GetPlanets();
+
+            var planet = planets.PlanetList[id-1];
+
+            return View(planet);
         }
 
         [HttpPost]
