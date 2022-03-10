@@ -57,7 +57,7 @@ setInterval(function()
         //Bottom right corner of the mouse
         if (((actPositionY <= getMouseY()+counter && actPositionY >= getMouseY()+0) && (actPositionX <= getMouseX()+counter && actPositionX >= getMouseX()+0))) 
         {
-            if((actPositionX + counter) <= (window.innerWidth - 15) || (actPositionX - counter) >= 0)
+            /*if((actPositionX + counter) <= (window.innerWidth - 15) || (actPositionX - counter) >= 0)
             {
                 starMove3(stars[i].id);
             }
@@ -68,7 +68,8 @@ setInterval(function()
             else
             {
               starMove4(stars[i].id);
-            }
+            }*/
+            starMove4(stars[i].id);
             
         }
         //Top left corner of the mouse
