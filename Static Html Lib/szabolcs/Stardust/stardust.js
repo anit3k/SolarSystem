@@ -1,5 +1,5 @@
 //Generate a random number between 2000 and 2500 for the stars
-var maxStar = Math.floor( Math.random() * 500 )+ 2000;
+var maxStar = Math.floor( Math.random() * 500 )+ 500;
 //console.log(maxStar);
 //Generate random amount of stars with random positions
 for (var starcounter = 0; starcounter <= maxStar; starcounter++) 
@@ -57,26 +57,18 @@ setInterval(function()
         //Bottom right corner of the mouse
         if (((actPositionY <= getMouseY()+counter && actPositionY >= getMouseY()+0) && (actPositionX <= getMouseX()+counter && actPositionX >= getMouseX()+0))) 
         {
-           /* if((actPositionX + counter) >= (window.innerWidth - 15) || (actPositionX - counter) <= 0)
+            if((actPositionX + counter) <= (window.innerWidth - 15) || (actPositionX - counter) >= 0)
             {
-                /*stars[i].style.left = (actPositionX - counter) + "px";
-                stars[i].style.top = (actPositionY - counter) + "px";
-                
-
+                starMove3(stars[i].id);
             }
             else if ((actPositionY + counter) >= (window.innerHeight - 15) || (actPositionY - counter) <= 0)
             {
-                /*stars[i].style.left = (actPositionX - counter) + "px";
-                stars[i].style.top = (actPositionY - counter) + "px";
-                starMove();
+               starMove3(stars[i].id);
             }
             else
             {
-                /*stars[i].style.left = (actPositionX + counter) + "px";
-                stars[i].style.top = (actPositionY + counter) + "px";
-                starMove(); 
-            }*/
-            starMove4(stars[i].id);
+              starMove4(stars[i].id);
+            }
             
         }
         //Top left corner of the mouse
@@ -143,6 +135,7 @@ setInterval(function()
    
   }, 10);
   
+  //Moving the stars to the bottom left corner
   function starMove1(starId)
   {
     var id = null;
@@ -151,11 +144,13 @@ setInterval(function()
     var pos2 = elem.style.top;
     pos1 = Number(pos1.substring(0, pos1.length-2));
     pos2 = Number(pos2.substring(0, pos2.length-2));
+    var ogPos1 = pos1;
+    var ogPos2 = pos2;
     clearInterval(id);
     id = setInterval(frame, 1);
     function frame()
     {
-      if (pos1 <= (pos1 + 50))
+      if (pos1 <= (ogPos1 + 50))
       {
         pos1--; 
         elem.style.top = pos2 + "px"; 
@@ -165,7 +160,7 @@ setInterval(function()
       {
         clearInterval(id);
       }
-      if (pos2 <= (pos2 + 50)) 
+      if (pos2 <= (ogPos2 + 50)) 
       {
         pos2++; 
         elem.style.top = pos2 + "px"; 
@@ -178,6 +173,7 @@ setInterval(function()
     }
   }
 
+  //Moving the stars to the top right corner
   function starMove2(starId)
   {
     var id = null;
@@ -186,11 +182,13 @@ setInterval(function()
     var pos2 = elem.style.top;
     pos1 = Number(pos1.substring(0, pos1.length-2));
     pos2 = Number(pos2.substring(0, pos2.length-2));
+    var ogPos1 = pos1;
+    var ogPos2 = pos2;
     clearInterval(id);
     id = setInterval(frame, 1);
     function frame()
     {
-      if (pos1 <= (pos1 + 50))
+      if (pos1 <= (ogPos1 + 50))
       {
         pos1++; 
         elem.style.top = pos2 + "px"; 
@@ -200,7 +198,7 @@ setInterval(function()
       {
         clearInterval(id);
       }
-      if (pos2 <= (pos2 + 50)) 
+      if (pos2 <= (ogPos2 + 50)) 
       {
         pos2--; 
         elem.style.top = pos2 + "px"; 
@@ -213,6 +211,7 @@ setInterval(function()
     }
   }
 
+  //Moving the stars to the top left corner
   function starMove3(starId)
   {
     var id = null;
@@ -221,11 +220,13 @@ setInterval(function()
     var pos2 = elem.style.top;
     pos1 = Number(pos1.substring(0, pos1.length-2));
     pos2 = Number(pos2.substring(0, pos2.length-2));
+    var ogPos1 = pos1;
+    var ogPos2 = pos2;
     clearInterval(id);
     id = setInterval(frame, 1);
     function frame()
     {
-      if (pos1 <= (pos1 + 50))
+      if ((pos1 + 50) >= (ogPos1 + 50))
       {
         pos1--; 
         elem.style.top = pos2 + "px"; 
@@ -233,9 +234,9 @@ setInterval(function()
       }
       else
       {
-        //clearInterval(id);
+        clearInterval(id);
       }
-      if (pos2 <= (pos2 + 50)) 
+      if ((pos2 + 50) >= (ogPos2 + 50)) 
       {
         pos2--; 
         elem.style.top = pos2 + "px"; 
@@ -243,11 +244,12 @@ setInterval(function()
       } 
       else
       {
-        //clearInterval(id);
+        clearInterval(id);
       }
     }
   }
 
+  //Moving the stars to the bottom right corner
   function starMove4(starId)
   {
     var id = null;
@@ -256,11 +258,13 @@ setInterval(function()
     var pos2 = elem.style.top;
     pos1 = Number(pos1.substring(0, pos1.length-2));
     pos2 = Number(pos2.substring(0, pos2.length-2));
+    var ogPos1 = pos1;
+    var ogPos2 = pos2;
     clearInterval(id);
     id = setInterval(frame, 1);
     function frame()
     {
-      if (pos1 <= (pos1 + 50))
+      if (pos1 <= (ogPos1 + 50))
       {
         pos1++; 
         elem.style.top = pos2 + "px"; 
@@ -270,7 +274,7 @@ setInterval(function()
       {
         clearInterval(id);
       }
-      if (pos2 <= (pos2 + 50)) 
+      if (pos2 <= (ogPos2 + 50)) 
       {
         pos2++; 
         elem.style.top = pos2 + "px"; 
