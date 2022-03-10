@@ -44,7 +44,7 @@ const element = document.getElementById("stardust-container");
 setInterval(function() 
 {
     var stars = document.getElementsByTagName("span");
-    var counter = 50;
+    var counter = 25;
 
     for (var i = 0; i < stars.length; i++)
     {
@@ -150,7 +150,7 @@ setInterval(function()
     id = setInterval(frame, 1);
     function frame()
     {
-      if (pos1 <= (ogPos1 + 50))
+      if (pos1 <= (ogPos1 + 25))
       {
         pos1--; 
         elem.style.top = pos2 + "px"; 
@@ -160,7 +160,7 @@ setInterval(function()
       {
         clearInterval(id);
       }
-      if (pos2 <= (ogPos2 + 50)) 
+      if (pos2 <= (ogPos2 + 25)) 
       {
         pos2++; 
         elem.style.top = pos2 + "px"; 
@@ -188,7 +188,7 @@ setInterval(function()
     id = setInterval(frame, 1);
     function frame()
     {
-      if (pos1 <= (ogPos1 + 50))
+      if (pos1 <= (ogPos1 + 25))
       {
         pos1++; 
         elem.style.top = pos2 + "px"; 
@@ -198,7 +198,7 @@ setInterval(function()
       {
         clearInterval(id);
       }
-      if (pos2 <= (ogPos2 + 50)) 
+      if (pos2 <= (ogPos2 + 25)) 
       {
         pos2--; 
         elem.style.top = pos2 + "px"; 
@@ -264,7 +264,7 @@ setInterval(function()
     id = setInterval(frame, 1);
     function frame()
     {
-      if (pos1 <= (ogPos1 + 50))
+      if (pos1 <= (ogPos1 + 25))
       {
         pos1++; 
         elem.style.top = pos2 + "px"; 
@@ -274,7 +274,7 @@ setInterval(function()
       {
         clearInterval(id);
       }
-      if (pos2 <= (ogPos2 + 50)) 
+      if (pos2 <= (ogPos2 + 25)) 
       {
         pos2++; 
         elem.style.top = pos2 + "px"; 
