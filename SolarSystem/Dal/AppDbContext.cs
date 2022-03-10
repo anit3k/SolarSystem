@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SolarSystem.Models;
+using SolarSystem.ViewModels;
 
 namespace SolarSystem.Dal
 {
@@ -12,6 +13,7 @@ namespace SolarSystem.Dal
         #region fields
         private DbSet<Language> _languages;
         private DbSet<StringResources> _stringResources;
+        private DbSet<Planet> _planets;
         #endregion
 
         #region Constructor
@@ -36,12 +38,16 @@ namespace SolarSystem.Dal
         {
             get { return _languages; }
             set { _languages = value; }
-        }
-            
+        }            
         public DbSet<StringResources> StringResources
         {
             get { return _stringResources; }
             set { _stringResources = value; }
+        }
+        public DbSet<Planet> Planets
+        {
+            get { return _planets; }
+            set { _planets = value; }
         }
         #endregion
     }

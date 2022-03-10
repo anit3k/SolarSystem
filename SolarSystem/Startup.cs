@@ -43,13 +43,14 @@ namespace SolarSystem
             {
                 services.AddScoped<ILanguageService, LanguageService>();
                 services.AddScoped<ILocalizationService, LocalizationService>();
+                services.AddScoped<IPlanetService, PlanetService>();
             }
             else // else run with mock-ups of the language and localization classes (normal debug - Iss Express and others)
             {
                 // mock-up version of the above
                 services.AddScoped<ILanguageService, MockLanguageService>();
                 services.AddScoped<ILocalizationService, MockLocalizationService>();
-
+                services.AddScoped<IPlanetService, MockPlanetService>();
             }
 
 
