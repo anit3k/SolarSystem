@@ -18,6 +18,10 @@ namespace SolarSystem.Services
         public MockLocalizationService()
         {
             StringResources = new List<StringResources> {
+                new StringResources{LanguageId = 1, Name = "page.lang", Value = "en"},
+                new StringResources{LanguageId = 2, Name = "page.lang", Value = "hu"},
+                new StringResources{LanguageId = 3, Name = "page.lang", Value = "dk"},
+
                 new StringResources{LanguageId = 1, Name = "index.sun", Value = "Sun"},
                 new StringResources{LanguageId = 2, Name = "index.sun", Value = "Nap"},
                 new StringResources{LanguageId = 3, Name = "index.sun", Value = "Solen"},
