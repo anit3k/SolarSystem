@@ -1,0 +1,20 @@
+CREATE TABLE Languages (
+	id INT NOT NULL IDENTITY(1,1),
+	name VARCHAR(100) NOT NULL,
+	culture VARCHAR(30) NOT NULL,
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE StringResources (
+	id INT NOT NULL IDENTITY(1,1),
+	language_id INT FOREIGN KEY REFERENCES Languages(id),
+	name VARCHAR(MAX),
+	value TEXT,
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE Planets (
+	id INT NOT NULL IDENTITY(1,1),	
+	name VARCHAR(MAX),
+	PRIMARY KEY (id)
+);

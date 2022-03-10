@@ -18,15 +18,6 @@ namespace SolarSystem.Services
         public MockLocalizationService()
         {
             StringResources = new List<StringResources> {
-                                
-                new StringResources{LanguageId = 1, Name = "index.greeting", Value = "Hello and welcome to our solar system model"},
-                new StringResources{LanguageId = 2, Name = "index.greeting", Value = "Üdvözöljük a nap rendszerunk modeljeben"},
-                new StringResources{LanguageId = 3, Name = "index.greeting", Value = "Hej og velkommen til vores solsystemmodel"},
-
-                new StringResources{LanguageId = 1, Name = "index.hello", Value = "Hello"},
-                new StringResources{LanguageId = 2, Name = "index.hello", Value = "Szia"},
-                new StringResources{LanguageId = 3, Name = "index.hello", Value = "Davs"},
-
                 new StringResources{LanguageId = 1, Name = "index.sun", Value = "Sun"},
                 new StringResources{LanguageId = 2, Name = "index.sun", Value = "Nap"},
                 new StringResources{LanguageId = 3, Name = "index.sun", Value = "Solen"},
@@ -49,7 +40,7 @@ namespace SolarSystem.Services
 
                 new StringResources{LanguageId = 1, Name = "index.mars", Value = "Mars"},
                 new StringResources{LanguageId = 2, Name = "index.mars", Value = "Mars"},
-                new StringResources{LanguageId = 3, Name = "index.mars", Value = "mars"},
+                new StringResources{LanguageId = 3, Name = "index.mars", Value = "Mars"},
 
                 new StringResources{LanguageId = 1, Name = "index.jupiter", Value = "Jupiter"},
                 new StringResources{LanguageId = 2, Name = "index.jupiter", Value = "Jupiter"},
@@ -65,7 +56,7 @@ namespace SolarSystem.Services
 
                 new StringResources{LanguageId = 1, Name = "index.neptune", Value = "Neptune"},
                 new StringResources{LanguageId = 2, Name = "index.neptune", Value = "Neptunusz"},
-                new StringResources{LanguageId = 3, Name = "index.neptune", Value = "Neptune"},
+                new StringResources{LanguageId = 3, Name = "index.neptune", Value = "Neptun"},
 
                 new StringResources{LanguageId = 1, Name = "index.pluto", Value = "Pluto"},
                 new StringResources{LanguageId = 2, Name = "index.pluto", Value = "Pluto"},
