@@ -152,30 +152,28 @@ setInterval(function()
     pos1 = Number(pos1.substring(0, pos1.length-2));
     pos2 = Number(pos2.substring(0, pos2.length-2));
     clearInterval(id);
-    id = setInterval(frame, 5);
+    id = setInterval(frame, 1);
     function frame()
     {
-      if (pos1 >= (pos1 + 50))
-      {
-        clearInterval(id);
-      }
-      else
+      if (pos1 <= (pos1 + 50))
       {
         pos1--; 
         elem.style.top = pos2 + "px"; 
         elem.style.left = pos1 + "px";
-        //console.log("pos1: " + pos1);
       }
-      if (pos2 >= (pos2 + 50)) 
+      else
       {
         clearInterval(id);
-      } 
-      else
+      }
+      if (pos2 <= (pos2 + 50)) 
       {
         pos2++; 
         elem.style.top = pos2 + "px"; 
         elem.style.left = pos1 + "px";
-        //console.log("pos2: " + pos2);
+      } 
+      else
+      {
+        clearInterval(id);
       }
     }
   }
@@ -189,30 +187,28 @@ setInterval(function()
     pos1 = Number(pos1.substring(0, pos1.length-2));
     pos2 = Number(pos2.substring(0, pos2.length-2));
     clearInterval(id);
-    id = setInterval(frame, 5);
+    id = setInterval(frame, 1);
     function frame()
     {
-      if (pos1 >= (pos1 + 50))
-      {
-        clearInterval(id);
-      }
-      else
+      if (pos1 <= (pos1 + 50))
       {
         pos1++; 
         elem.style.top = pos2 + "px"; 
         elem.style.left = pos1 + "px";
-        //console.log("pos1: " + pos1);
       }
-      if (pos2 >= (pos2 + 50)) 
+      else
       {
         clearInterval(id);
-      } 
-      else
+      }
+      if (pos2 <= (pos2 + 50)) 
       {
         pos2--; 
         elem.style.top = pos2 + "px"; 
         elem.style.left = pos1 + "px";
-        //console.log("pos2: " + pos2);
+      } 
+      else
+      {
+       clearInterval(id);
       }
     }
   }
@@ -226,30 +222,28 @@ setInterval(function()
     pos1 = Number(pos1.substring(0, pos1.length-2));
     pos2 = Number(pos2.substring(0, pos2.length-2));
     clearInterval(id);
-    id = setInterval(frame, 5);
+    id = setInterval(frame, 1);
     function frame()
     {
-      if (pos1 >= (pos1 + 50))
-      {
-        clearInterval(id);
-      }
-      else
+      if (pos1 <= (pos1 + 50))
       {
         pos1--; 
         elem.style.top = pos2 + "px"; 
         elem.style.left = pos1 + "px";
-        //console.log("pos1: " + pos1);
       }
-      if (pos2 >= (pos2 + 50)) 
-      {
-        clearInterval(id);
-      } 
       else
+      {
+        //clearInterval(id);
+      }
+      if (pos2 <= (pos2 + 50)) 
       {
         pos2--; 
         elem.style.top = pos2 + "px"; 
         elem.style.left = pos1 + "px";
-        //console.log("pos2: " + pos2);
+      } 
+      else
+      {
+        //clearInterval(id);
       }
     }
   }
@@ -263,30 +257,28 @@ setInterval(function()
     pos1 = Number(pos1.substring(0, pos1.length-2));
     pos2 = Number(pos2.substring(0, pos2.length-2));
     clearInterval(id);
-    id = setInterval(frame, 5);
+    id = setInterval(frame, 1);
     function frame()
     {
-      if (pos1 >= (pos1 + 50))
-      {
-        clearInterval(id);
-      }
-      else
+      if (pos1 <= (pos1 + 50))
       {
         pos1++; 
         elem.style.top = pos2 + "px"; 
         elem.style.left = pos1 + "px";
-        //console.log("pos1: " + pos1);
       }
-      if (pos2 >= (pos2 + 50)) 
+      else
       {
         clearInterval(id);
-      } 
-      else
+      }
+      if (pos2 <= (pos2 + 50)) 
       {
         pos2++; 
         elem.style.top = pos2 + "px"; 
         elem.style.left = pos1 + "px";
-        //console.log("pos2: " + pos2);
+      } 
+      else
+      {
+        clearInterval(id);
       }
     }
   }
