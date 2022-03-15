@@ -32,7 +32,7 @@ namespace SolarSystem.Controllers
             PlanetListViewModel planets = new PlanetListViewModel();
             planets.PlanetList = _planetService.GetPlanets();
 
-            var planet = planets.PlanetList[id-1];
+            var planet = planets.PlanetList[id];
 
             return View(planet);
         }
