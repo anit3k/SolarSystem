@@ -1,10 +1,9 @@
-//Generate a random number between 2000 and 2500 for the stars
+//Generate a random number between 500 and 600 for the stars
 var maxStar = Math.floor( Math.random() * 500 )+ 600;
 
 //Generate random amount of stars with random positions
 for (var starcounter = 0; starcounter <= maxStar; starcounter++) 
 {
-    //console.log(":: "+starcounter);
     var positionX = Math.floor( Math.random() * (window.innerWidth - 15) );
     var positionY = Math.floor( Math.random() * (window.innerHeight - 15) );
     const star = document.createElement("span");
@@ -63,78 +62,21 @@ setInterval(function()
         //Bottom right corner of the mouse
         if (((actPositionY <= getMouseY()+counter && actPositionY >= getMouseY()+0) && (actPositionX <= getMouseX()+counter && actPositionX >= getMouseX()+0))) 
         {
-            if((actPositionX + counter) <= (window.innerWidth - 15) || (actPositionX - counter) >= 0)
-            {
-              starMove4(stars[i].id);
-            }
-            else if ((actPositionY + counter) >= (window.innerHeight - 15) || (actPositionY - counter) <= 0)
-            {
-              starMove3(stars[i].id);
-            }
-            else
-            {
-              starMove3(stars[i].id);
-            }
-            
+            starMove4(stars[i].id);
         }
         //Top left corner of the mouse
         else if (((actPositionY >= getMouseY()-counter && actPositionY <= getMouseY()+0) && (actPositionX >= getMouseX()-counter && actPositionX <= getMouseX()+0))) 
         {
-            /*if((actPositionX + counter) <= (window.innerWidth - 15) || (actPositionX - counter) >= 0)
-            {
-                stars[i].style.left = (actPositionX + counter) + "px";
-                stars[i].style.top = (actPositionY + counter) + "px";
-            }
-            else if ((actPositionY + counter) <= (window.innerHeight - 15) || (actPositionY - counter) >= 0)
-            {
-                stars[i].style.left = (actPositionX + counter) + "px";
-                stars[i].style.top = (actPositionY + counter) + "px";
-            }
-            else
-            {
-                stars[i].style.left = (actPositionX - counter) + "px";
-                stars[i].style.top = (actPositionY - counter) + "px"; 
-            }*/
             starMove3(stars[i].id);
         }
         //Bottom left corner of the mouse
         else if (((actPositionY <= getMouseY()+counter && actPositionY >= getMouseY()+0) && (actPositionX >= getMouseX()-counter && actPositionX <= getMouseX()+0))) 
         {
-            /*if((actPositionX + counter) <= (window.innerWidth - 15) || (actPositionX - counter) >= 0)
-            {
-                stars[i].style.left = (actPositionX - counter) + "px";
-                stars[i].style.top = (actPositionY + counter) + "px";
-            }
-            else if ((actPositionY + counter) <= (window.innerHeight - 15) || (actPositionY - counter) >= 0)
-            {
-                stars[i].style.left = (actPositionX - counter) + "px";
-                stars[i].style.top = (actPositionY + counter) + "px";
-            }
-            else
-            {
-                stars[i].style.left = (actPositionX + counter) + "px";
-                stars[i].style.top = (actPositionY - counter) + "px"; 
-            }*/
             starMove1(stars[i].id);
         }
         //Top right corner of the mouse
         else if (((actPositionY >= getMouseY()-counter && actPositionY <= getMouseY()+0) && (actPositionX <= getMouseX()+counter && actPositionX >= getMouseX()+0))) 
         {
-            /*if((actPositionX + counter) >= (window.innerWidth - 15) || (actPositionY - counter) <= 0)
-            {
-                stars[i].style.left = (actPositionX + counter) + "px";
-                stars[i].style.top = (actPositionY - counter) + "px";
-            }
-            else if ((actPositionY + counter) >= (window.innerHeight - 15) || (actPositionY - counter) <= 0)
-            {
-                stars[i].style.left = (actPositionX + counter) + "px";
-                stars[i].style.top = (actPositionY - counter) + "px";
-            }
-            else
-            {
-                stars[i].style.left = (actPositionX - counter) + "px";
-                stars[i].style.top = (actPositionY + counter) + "px";
-             }*/
             starMove2(stars[i].id);
         }
     }
