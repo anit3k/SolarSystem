@@ -40,7 +40,12 @@
                                         asp-for="@requestCulture.RequestCulture.UICulture.Name">
                                 </select>
                                 <div class="lang-select lang-sel">
-                                    <button class="btn-select" value=""></button>
+                                    <button asp-items="cultureItems"
+                                        onchange="this.form.submit();"
+                                        class="btn-select form-control"
+                                        value=""
+                                        name="culture"
+                                    ></button>
                                     <div class="b">
                                         <ul id="a"></ul>
                                     </div>
