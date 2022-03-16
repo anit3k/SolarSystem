@@ -40,7 +40,7 @@
                                         asp-for="@requestCulture.RequestCulture.UICulture.Name">
                                 </select>
                                 <a class="nav-item" asp-area="" asp-controller="Home" asp-action="stardust" >Stardust</a>
-                                <a class="nav-item" asp-area="" asp-controller="Home" asp-action="" >Home</a>
+                                <a class="nav-item" asp-area="" asp-controller="Home" asp-action="" >@GetString("nav.home")</a>
                                 <div class="lang-select lang-sel d-none">
                                     <button asp-items="cultureItems"
                                         onchange="this.form.submit();"
