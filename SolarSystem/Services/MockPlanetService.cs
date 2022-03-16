@@ -16,17 +16,17 @@ namespace SolarSystem.Services
         {
             Planets = new List<Planet>
             {
-                new Planet{Id = 0, Name = "sun"},
-                new Planet{Id = 1, Name = "mercury"},
-                new Planet{Id = 2, Name = "venus"},
-                new Planet{Id = 3, Name = "earth"},
-                new Planet{Id = 4, Name = "moon"},
-                new Planet{Id = 5, Name = "mars"},
-                new Planet{Id = 6, Name = "jupiter"},
-                new Planet{Id = 7, Name = "saturn"},
-                new Planet{Id = 8, Name = "uranus"},
-                new Planet{Id = 9, Name = "neptune"},
-                new Planet{Id = 10, Name = "pluto"}
+                new Planet{Id = 1, Name = "sun"},
+                new Planet{Id = 2, Name = "mercury"},
+                new Planet{Id = 3, Name = "venus"},
+                new Planet{Id = 4, Name = "earth"},
+                new Planet{Id = 5, Name = "moon"},
+                new Planet{Id = 6, Name = "mars"},
+                new Planet{Id = 7, Name = "jupiter"},
+                new Planet{Id = 8, Name = "saturn"},
+                new Planet{Id = 9, Name = "uranus"},
+                new Planet{Id = 10, Name = "neptune"},
+                new Planet{Id = 11, Name = "pluto"}
 
             };
 
