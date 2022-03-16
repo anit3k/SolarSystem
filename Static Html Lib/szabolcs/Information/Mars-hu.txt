@@ -7,11 +7,11 @@ A Nasa-nak jelenleg két felderítő robotja(Curiosity és Perserverance), egy l
 
 A Perserverance a legnagyobb,legfejlettebb robot amit a NASA egy másik bolygóra küldött. 2021. február 18.-án landolt , egy 203 napos út során, 472 millió kilóméter utazás után.
 
-Az Ingenuity helikopter a Perserverance aljáhot rögzítve utazott.
+Az Ingenuity helikopter a Perserverance aljához rögzítve utazott.
 
 Perserverance egy a három közül ami 2021-ben érkezett a marsra.
 
-A Hope műhold az Egyesült Arab Emírségekből érkezett 2021 február 9.-én. A kínai Tiawen-1 küldetés február 10.-én érkezett, és egy műhold,egy leszálló és egy felderítő.
+A Hope műhold az Egyesült Arab Emírségekből érkezett 2021 február 9.-én. A kínai Tiawen-1 küldetés február 10.-én érkezett, és egy műhold,egy leszálló és egy felderítő egységből áll.
 
 Európának és Indiának is van műholdja ami a Marsot tanulmányozza.
 
