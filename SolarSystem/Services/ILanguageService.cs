@@ -9,7 +9,16 @@ namespace SolarSystem.Services
     /// </summary>
     public interface ILanguageService
     {
+        /// <summary>
+        /// Gets a list of all supported languages
+        /// </summary>
+        /// <returns></returns>
         IEnumerable<Language> GetLanguages();
+        /// <summary>
+        /// Gets the language of the requested culture
+        /// </summary>
+        /// <param name="culture"></param>
+        /// <returns></returns>
         Language GetLanguageByCulture(string culture);
     }
 }

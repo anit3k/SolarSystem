@@ -4,6 +4,9 @@ using System.Linq;
 
 namespace SolarSystem.Services
 {
+    /// <summary>
+    /// This class represent the object needed for translation using the database
+    /// </summary>
     public class LocalizationService : ILocalizationService
     {
         #region fields

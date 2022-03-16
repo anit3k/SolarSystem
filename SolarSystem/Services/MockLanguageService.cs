@@ -1,12 +1,14 @@
 ﻿using SolarSystem.Models;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SolarSystem.Services
 {
+    /// <summary>
+    /// this class represent a mock-up version of the culture/language,
+    /// this is only used for the Hungarians to be able to use the code
+    /// without having access to a database, this is way values are hard coded into the class
+    /// </summary>
     public class MockLanguageService : ILanguageService
     {
         public IEnumerable<Language> GetLanguages()

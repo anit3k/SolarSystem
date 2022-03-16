@@ -1,1 +1,1 @@
-﻿This library will contain shared static html files
+﻿This library will contain shared static files
