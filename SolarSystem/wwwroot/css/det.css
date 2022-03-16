@@ -1,0 +1,54 @@
+
+
+.detail-planet{
+    width: 100%;
+    
+    
+}
+.detail-text{
+    
+    color: rgb(183, 235, 236);
+    background-color: rgba(128, 128, 128, 0.555);
+    border: solid black;
+    border-radius:  5px;
+    padding: 20px 20px 20px 20px;
+    margin-bottom: 20px;
+}
+.detail-facts{
+    color: rgb(183, 235, 236);
+    background-color: rgba(128, 128, 128, 0.555);
+    border: solid black;
+    border-radius:  5px;
+    padding: 20px 20px 20px 20px;
+}
+
+.detail-structure{
+    width: 40%;
+    margin: auto;
+    display: block;
+    
+}
+.detail-text-subtitle{
+    color: rgb(99, 247, 247);
+}
+.detail-facts-subtitle{
+    color: rgb(99, 247, 247);
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #d4d1d1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

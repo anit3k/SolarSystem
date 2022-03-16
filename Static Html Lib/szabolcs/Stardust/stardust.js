@@ -1,4 +1,4 @@
-//Generate a random number between 2000 and 2500 for the stars
+//Generate a random number between 500 and 600 for the stars
 var maxStar = Math.floor( Math.random() * 500 )+ 600;
 
 //Generate random amount of stars with random positions
