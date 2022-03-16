@@ -39,17 +39,6 @@
                                         asp-items="cultureItems"
                                         asp-for="@requestCulture.RequestCulture.UICulture.Name">
                                 </select>
-                                <div class="lang-select lang-sel">
-                                    <button asp-items="cultureItems"
-                                        onchange="this.form.submit();"
-                                        class="btn-select form-control"
-                                        value=""
-                                        name="culture"
-                                    ></button>
-                                    <div class="b">
-                                        <ul id="a"></ul>
-                                    </div>
-                                </div>
                             </form>
                         </li>
                     </ul>
@@ -57,17 +46,12 @@
             </div>
         </nav>
     </header>
+
     <div class="container-fluid">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-
-    <footer class="footer" >
-        <div class="container">
-            &copy; 2022 - ZBC Ringsted - Development - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
 
     <script src="~/lib/jquery/jquery.js"></script>
     <script src="~/lib/jquery/language-image.js"></script>
