@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SolarSystem.Dal;
+using SolarSystem.Hubs;
 using SolarSystem.Services;
 using System.Globalization;
 using System.Linq;
@@ -18,7 +19,6 @@ namespace SolarSystem
         private IConfiguration _configuration;
         private IWebHostEnvironment CurrentEnvironment { get; set; }
         #endregion
-
 
         #region Constructor
         /// <summary>
@@ -34,7 +34,7 @@ namespace SolarSystem
         #endregion
 
         #region Methods
-        // This method gets called by the runtime. Use this method to add services to the container.
+        // This method gets called by the runtime. Use this method to add services to the MVC container.
         public void ConfigureServices(IServiceCollection services)
         {
             // .AddScoped -> Scooped lifetime services are created once per Http request. but uses the same instance in other calls within the same web request
@@ -84,6 +84,11 @@ namespace SolarSystem
                 options.SupportedCultures = cultures;
                 options.SupportedUICultures = cultures;
             });
+
+
+            // Here we add the service for using SignalR, in this case we use it for an external client (Arduino and winform) to change the current url
+            // to show selected planet
+            services.AddSignalR(); 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -92,7 +97,7 @@ namespace SolarSystem
             // this method is called so that we can use the languageService and the localizationService
             app.UseRequestLocalization();
 
-
+            // Used to write detailed exception page if run in Dev environment
             CheckIsDevEnviroment(app, env);
 
 
@@ -105,9 +110,13 @@ namespace SolarSystem
             app.UseRouting();
             app.UseEndpoints(endpoints =>
             {
+                // default route configuration
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+                // this maps the route used for the signalR hub
+                endpoints.MapHub<PlanetSelecterHub>("/PlanetSelecterHub");
             });
         }
 

@@ -77,21 +77,23 @@
         </div>
     </div>
     <div class="row position-fixed" style="bottom: 0;">
-            <div class="col-lg-12 planet-titles-bg">
-                <div class="col-lg-8 mx-auto planet-titles-container">
-                    <div class="planet-titles planet-title-5"><a asp-controller="Home" asp-action="Detail" asp-route-id="@Model.PlanetList[0].Id">@GetString("index.sun")</a></div>
-                    <div class="planet-titles planet-title-5"><a asp-controller="Home" asp-action="Detail" asp-route-id="@Model.PlanetList[1].Id">@GetString("index.mercury")</a></div>
-                    <div class="planet-titles planet-title-5"><a asp-controller="Home" asp-action="Detail" asp-route-id="@Model.PlanetList[2].Id">@GetString("index.venus")</a></div>
-                    <div class="planet-titles planet-title-5"><a asp-controller="Home" asp-action="Detail" asp-route-id="@Model.PlanetList[3].Id">@GetString("index.earth")</a></div>
-                    <div class="planet-titles planet-title-5"><a asp-controller="Home" asp-action="Detail" asp-route-id="@Model.PlanetList[4].Id">@GetString("index.moon")</a></div>
-                    <div class="planet-titles planet-title-5"><a asp-controller="Home" asp-action="Detail" asp-route-id="@Model.PlanetList[5].Id">@GetString("index.mars")</a></div>
-                    <div class="planet-titles planet-title-5"><a asp-controller="Home" asp-action="Detail" asp-route-id="@Model.PlanetList[6].Id">@GetString("index.jupiter")</a></div>
-                    <div class="planet-titles planet-title-5"><a asp-controller="Home" asp-action="Detail" asp-route-id="@Model.PlanetList[7].Id">@GetString("index.saturn")</a></div>
-                    <div class="planet-titles planet-title-5"><a asp-controller="Home" asp-action="Detail" asp-route-id="@Model.PlanetList[8].Id">@GetString("index.uranus")</a></div>
-                    <div class="planet-titles planet-title-5"><a asp-controller="Home" asp-action="Detail" asp-route-id="@Model.PlanetList[9].Id">@GetString("index.neptune")</a></div>
-                    <div class="planet-titles planet-title-5"><a asp-controller="Home" asp-action="Detail" asp-route-id="@Model.PlanetList[10].Id">@GetString("index.pluto")</a></div>
+        <div class="col-lg-12 planet-titles-bg">
+            <div class="col-lg-8 mx-auto planet-titles-container">
+                <div class="planet-titles planet-title-5"><a asp-controller="Home" asp-action="Detail" asp-route-id="@Model.PlanetList[0].Id">@GetString("index.sun")</a></div>
+                <div class="planet-titles planet-title-5"><a asp-controller="Home" asp-action="Detail" asp-route-id="@Model.PlanetList[1].Id">@GetString("index.mercury")</a></div>
+                <div class="planet-titles planet-title-5"><a asp-controller="Home" asp-action="Detail" asp-route-id="@Model.PlanetList[2].Id">@GetString("index.venus")</a></div>
+                <div class="planet-titles planet-title-5"><a asp-controller="Home" asp-action="Detail" asp-route-id="@Model.PlanetList[3].Id">@GetString("index.earth")</a></div>
+                <div class="planet-titles planet-title-5"><a asp-controller="Home" asp-action="Detail" asp-route-id="@Model.PlanetList[4].Id">@GetString("index.moon")</a></div>
+                <div class="planet-titles planet-title-5"><a asp-controller="Home" asp-action="Detail" asp-route-id="@Model.PlanetList[5].Id">@GetString("index.mars")</a></div>
+                <div class="planet-titles planet-title-5"><a asp-controller="Home" asp-action="Detail" asp-route-id="@Model.PlanetList[6].Id">@GetString("index.jupiter")</a></div>
+                <div class="planet-titles planet-title-5"><a asp-controller="Home" asp-action="Detail" asp-route-id="@Model.PlanetList[7].Id">@GetString("index.saturn")</a></div>
+                <div class="planet-titles planet-title-5"><a asp-controller="Home" asp-action="Detail" asp-route-id="@Model.PlanetList[8].Id">@GetString("index.uranus")</a></div>
+                <div class="planet-titles planet-title-5"><a asp-controller="Home" asp-action="Detail" asp-route-id="@Model.PlanetList[9].Id">@GetString("index.neptune")</a></div>
+                <div class="planet-titles planet-title-5"><a asp-controller="Home" asp-action="Detail" asp-route-id="@Model.PlanetList[10].Id">@GetString("index.pluto")</a></div>
 
             </div>
         </div>
     </div>
-    <script src="./index.js"></script>
+    <script src="~/index.js"></script>
+    <script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+    <script src="~/js/signal.js"></script>
