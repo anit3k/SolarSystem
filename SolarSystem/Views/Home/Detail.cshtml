@@ -1,10 +1,30 @@
 ﻿@model Planet
 <link rel="stylesheet" href="~/css/det.css"/>
-<h1>@Model.Id</h1>
+<!--h1>@Model.Id</$>
 <h2>@Model.Name</h2>
 <p>@GetString("details."+@Model.Name)<p-->
 
  <div class="container planetinfo">
+             <div class="row">
+                <button onclick="playAudio()">Audio</button>
+                <audio id="audioFile" src='@GetString("details."+@Model.Name+".audio")' control></audio>
+                <script>
+                    var playPause = true;
+                    function playAudio(){
+                        var file = document.getElementById("audioFile");
+                        if(playPause){
+                            file.play();
+                            playPause = false;
+                            console.log("play");
+                        }
+                        else{
+                            file.pause();
+                            playPause = true;
+                            console.log("pause");
+                        }
+                    }
+                </script>
+            </div>
             <div class="row">
                 <div class="col-sm-6">
                     <!--main planet png-->
