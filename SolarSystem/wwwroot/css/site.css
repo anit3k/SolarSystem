@@ -1,5 +1,9 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
+.container-fluid {
+    height: calc(100vh - 90px);
+    overflow-y: auto;
+}
 .navbar {
 background-color: #333;
 }
@@ -161,4 +165,21 @@ body {
 
 .lang-select {
     margin-left: 50px;
+}
+
+nav a {
+    display: block;
+    height: 40px;
+    padding: 0 10px;
+    line-height: 40px;
+    /*float: left;*/
+}
+
+nav select {
+    margin: 5px 10px;
+    padding: 2.5px 10px ;
+}
+
+nav li {
+    width: 100%;
 }

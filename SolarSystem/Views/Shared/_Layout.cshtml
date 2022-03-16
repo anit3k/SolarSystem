@@ -25,21 +25,23 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm box-shadow">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm box-shadow p-0">
             <div class="container">
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="">
                             <form class="nav-item" asp-action="ChangeLanguage" asp-controller="Home" method="post">
                                 <input type="hidden" id="returnUrl" name="returnUrl" value="@returnUrl" />
-                                <select class="lang-sel" id="culture"
+                                <select  class="lang-sel nav-item" id="culture"
                                         name="culture"
                                         class="form-control"
                                         onchange="this.form.submit();"
                                         asp-items="cultureItems"
                                         asp-for="@requestCulture.RequestCulture.UICulture.Name">
                                 </select>
-                                <div class="lang-select lang-sel">
+                                <a class="nav-item" asp-area="" asp-controller="Home" asp-action="stardust" >Stardust</a>
+                                <a class="nav-item" asp-area="" asp-controller="Home" asp-action="" >Home</a>
+                                <div class="lang-select lang-sel d-none">
                                     <button asp-items="cultureItems"
                                         onchange="this.form.submit();"
                                         class="btn-select form-control"
