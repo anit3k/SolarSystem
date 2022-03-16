@@ -19,6 +19,10 @@ namespace SolarSystem.Services
                 new StringResources{LanguageId = 2, Name = "page.lang", Value = "hu"},
                 new StringResources{LanguageId = 3, Name = "page.lang", Value = "dk"},
 
+                new StringResources{LanguageId = 1, Name = "nav.home", Value = "Home"},
+                new StringResources{LanguageId = 2, Name = "nav.home", Value = "Főoldal"},
+                new StringResources{LanguageId = 3, Name = "nav.home", Value = "Unknown"},
+
                 new StringResources{LanguageId = 1, Name = "index.sun", Value = "Sun"},
                 new StringResources{LanguageId = 2, Name = "index.sun", Value = "Nap"},
                 new StringResources{LanguageId = 3, Name = "index.sun", Value = "Solen"},
