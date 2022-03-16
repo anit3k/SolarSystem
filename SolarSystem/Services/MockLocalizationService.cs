@@ -112,47 +112,47 @@ namespace SolarSystem.Services
 
                 new StringResources{LanguageId = 1, Name = "details.sun.audio", Value = "~/lib/audio/sun-en.m4a" },
                 new StringResources{LanguageId = 2, Name = "details.sun.audio", Value = "~/lib/audio/sun-hu.m4a" },
-                new StringResources{LanguageId = 3, Name = "details.sun.audio", Value = "~/lib/audio/sun-dk.mp4" },
+                new StringResources{LanguageId = 3, Name = "details.sun.audio", Value = "~/lib/audio/sun-da.mp4" },
 
                 new StringResources{LanguageId = 1, Name = "details.mercury.audio", Value = "~/lib/audio/mercury-en.m4a" },
                 new StringResources{LanguageId = 2, Name = "details.mercury.audio", Value = "~/lib/audio/mercury-hu.m4a" },
-                new StringResources{LanguageId = 3, Name = "details.mercury.audio", Value = "~/lib/audio/mercury-dk.mp4" },
+                new StringResources{LanguageId = 3, Name = "details.mercury.audio", Value = "~/lib/audio/mercury-da.mp4" },
 
                 new StringResources{LanguageId = 1, Name = "details.venus.audio", Value = "~/lib/audio/venus-en.m4a" },
                 new StringResources{LanguageId = 2, Name = "details.venus.audio", Value = "~/lib/audio/venus-hu.m4a" },
-                new StringResources{LanguageId = 3, Name = "details.venus.audio", Value = "~/lib/audio/venus-dk.mp4" },
+                new StringResources{LanguageId = 3, Name = "details.venus.audio", Value = "~/lib/audio/venus-da.mp4" },
 
                 new StringResources{LanguageId = 1, Name = "details.earth.audio", Value = "~/lib/audio/earth-en.m4a" },
                 new StringResources{LanguageId = 2, Name = "details.earth.audio", Value = "~/lib/audio/earth-hu.m4a" },
-                new StringResources{LanguageId = 3, Name = "details.earth.audio", Value = "~/lib/audio/earth-dk.mp4" },
+                new StringResources{LanguageId = 3, Name = "details.earth.audio", Value = "~/lib/audio/earth-da.mp4" },
 
                 new StringResources{LanguageId = 1, Name = "details.moon.audio", Value = "~/lib/audio/moon-en.m4a" },
                 new StringResources{LanguageId = 2, Name = "details.moon.audio", Value = "~/lib/audio/moon-hu.m4a" },
-                new StringResources{LanguageId = 3, Name = "details.moon.audio", Value = "~/lib/audio/moon-dk.mp4" },
+                new StringResources{LanguageId = 3, Name = "details.moon.audio", Value = "~/lib/audio/moon-da.mp4" },
 
                 new StringResources{LanguageId = 1, Name = "details.mars.audio", Value = "~/lib/audio/mars-en.m4a" },
                 new StringResources{LanguageId = 2, Name = "details.mars.audio", Value = "~/lib/audio/mars-hu.m4a" },
-                new StringResources{LanguageId = 3, Name = "details.mars.audio", Value = "~/lib/audio/mars-dk.mp4" },
+                new StringResources{LanguageId = 3, Name = "details.mars.audio", Value = "~/lib/audio/mars-da.mp4" },
 
                 new StringResources{LanguageId = 1, Name = "details.jupiter.audio", Value = "~/lib/audio/jupiter-en.m4a" },
                 new StringResources{LanguageId = 2, Name = "details.jupiter.audio", Value = "~/lib/audio/jupiter-hu.m4a" },
-                new StringResources{LanguageId = 3, Name = "details.jupiter.audio", Value = "~/lib/audio/jupiter-dk.mp4" },
+                new StringResources{LanguageId = 3, Name = "details.jupiter.audio", Value = "~/lib/audio/jupiter-da.mp4" },
 
                 new StringResources{LanguageId = 1, Name = "details.saturn.audio", Value = "~/lib/audio/saturn-en.m4a" },
                 new StringResources{LanguageId = 2, Name = "details.saturn.audio", Value = "~/lib/audio/saturn-hu.m4a" },
-                new StringResources{LanguageId = 3, Name = "details.saturn.audio", Value = "~/lib/audio/saturn-dk.mp4" },
+                new StringResources{LanguageId = 3, Name = "details.saturn.audio", Value = "~/lib/audio/saturn-da.mp4" },
 
                 new StringResources{LanguageId = 1, Name = "details.uranus.audio", Value = "~/lib/audio/uranus-en.m4a" },
                 new StringResources{LanguageId = 2, Name = "details.uranus.audio", Value = "~/lib/audio/uranus-hu.m4a" },
-                new StringResources{LanguageId = 3, Name = "details.uranus.audio", Value = "~/lib/audio/uranus-dk.mp4" },
+                new StringResources{LanguageId = 3, Name = "details.uranus.audio", Value = "~/lib/audio/uranus-da.mp4" },
 
                 new StringResources{LanguageId = 1, Name = "details.neptune.audio", Value = "~/lib/audio/neptune-en.m4a" },
                 new StringResources{LanguageId = 2, Name = "details.neptune.audio", Value = "~/lib/audio/neptune-hu.m4a" },
-                new StringResources{LanguageId = 3, Name = "details.neptune.audio", Value = "~/lib/audio/neptune-dk.mp4" },
+                new StringResources{LanguageId = 3, Name = "details.neptune.audio", Value = "~/lib/audio/neptune-da.mp4" },
 
                 new StringResources{LanguageId = 1, Name = "details.pluto.audio", Value = "~/lib/audio/pluto-en.m4a" },
                 new StringResources{LanguageId = 2, Name = "details.pluto.audio", Value = "~/lib/audio/pluto-hu.m4a" },
-                new StringResources{LanguageId = 3, Name = "details.pluto.audio", Value = "~/lib/audio/pluto-dk.mp4" },
+                new StringResources{LanguageId = 3, Name = "details.pluto.audio", Value = "~/lib/audio/pluto-da.mp4" },
             };
         }
         #endregion
