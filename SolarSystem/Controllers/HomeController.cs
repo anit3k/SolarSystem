@@ -29,12 +29,19 @@ namespace SolarSystem.Controllers
 
         public IActionResult Detail(int id)
         {
+           
             PlanetListViewModel planets = new PlanetListViewModel();
             planets.PlanetList = _planetService.GetPlanets();
 
-            var planet = planets.PlanetList[id];
+            var planet = planets.PlanetList.FirstOrDefault(x => x.Id == id);
+            //var yemp = planets.PlanetList[id];
 
             return View(planet);
+        }
+
+        public IActionResult Stardust()
+        {
+            return View();
         }
 
         [HttpPost]
