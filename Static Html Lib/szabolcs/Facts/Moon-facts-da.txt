@@ -1,7 +1,7 @@
-Månen viser altid jorden det samme ansigt (den samme side).
-Månens overflade er faktisk mørk, den har ikke noget lys.
-Solen og månen er ikke samme størrelse
-Månen bevæger sig cirka 3.8cm væk fra jorden hvert år.
-Månen blev skabt da en meteor ramte jorden.
-Månen har også jordskælv.
-Der er vand på månen.
+<li>Månen viser altid jorden det samme ansigt (den samme side).</li>
+<li>Månens overflade er faktisk mørk, den har ikke noget lys.</li>
+<li>Solen og månen er ikke samme størrelse</li>
+<li>Månen bevæger sig cirka 3.8cm væk fra jorden hvert år.</li>
+<li>Månen blev skabt da en meteor ramte jorden.</li>
+<li>Månen har også jordskælv.</li>
+<li>Der er vand på månen.</li>

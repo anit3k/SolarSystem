@@ -1,5 +1,5 @@
-Neptun er den planet fjernest fra solen.
-Neptun er den mindste gas gigant.
-Et år på neptun vare 165 år på jorden.
-Neptun er opkaldt efter den romerske gud af havet.
-Neptun har 6 svage ringe.
+<li>Neptun er den planet fjernest fra solen.</li>
+<li>Neptun er den mindste gas gigant.</li>
+<li>Et år på neptun vare 165 år på jorden.</li>
+<li>Neptun er opkaldt efter den romerske gud af havet.</li>
+<li>Neptun har 6 svage ringe.</li>

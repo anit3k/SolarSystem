@@ -1,5 +1,5 @@
-Mars er også kendt som den røde planet.
-Mars er opkaldt efter den romerske gud af krig.
-Mars har 2 måner kaldet Deimos og Phobos.
-Mars er den fjerde planet fra solen.
-Mars' vægt er 1 ottendedel af jordens.
+<li>Mars er også kendt som den røde planet.</li>
+<li>Mars er opkaldt efter den romerske gud af krig.</li>
+<li>Mars har 2 måner kaldet Deimos og Phobos.</li>
+<li>Mars er den fjerde planet fra solen.</li>
+<li>Mars' vægt er 1 ottendedel af jordens.</li>

@@ -1,5 +1,5 @@
-Saturn er den planet længst fra jorden, som kan ses med det blotte øje.
-Saturn var kendt mange år tilbage i tiden, inklusiv hos Babylonierne og fjerne østriske observanter.
-Saturn er også kaldt "Solsystemets juvel".
-Saturn kredser om solen en gang hvert 29.4 år på jorden.
-Saturns øvre atmosfære er splittet ind i grupper af skyer.
+<li>Saturn er den planet længst fra jorden, som kan ses med det blotte øje.</li>
+<li>Saturn var kendt mange år tilbage i tiden, inklusiv hos Babylonierne og fjerne østriske observanter.</li>
+<li>Saturn er også kaldt "Solsystemets juvel".</li>
+<li>Saturn kredser om solen en gang hvert 29.4 år på jorden.</li>
+<li>Saturns øvre atmosfære er splittet ind i grupper af skyer.</li>
