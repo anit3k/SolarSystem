@@ -81,9 +81,44 @@ namespace SignalRChatClient
                 //If the planetId isn't empty
                 if (planetId != "")
                 {
-                    Console.WriteLine(planetId);
-                    //Run the sendPlanetId method.
-                    SendPlanetId(planetId);
+                    string chars = planetId.Substring(0, 1);
+
+                    switch(chars)
+                    {
+                        case "0":
+                            SendPlanetId("1");
+                            break;
+                        case "1":
+                            SendPlanetId("2");
+                            break;
+                        case "2":
+                            SendPlanetId("3");
+                            break;
+                        case "3":
+                            SendPlanetId("4");
+                            break;
+                        case "4":
+                            SendPlanetId("6");
+                            break;
+                        case "5":
+                            SendPlanetId("7");
+                            break;
+                        case "6":
+                            SendPlanetId("8");
+                            break;
+                        case "7":
+                            SendPlanetId("9");
+                            break;
+                        case "8":
+                            SendPlanetId("10");
+                            break;
+                        default:
+                            break;
+                    }
+
+                    //Console.WriteLine(planetId);
+                    ////Run the sendPlanetId method.
+                    //SendPlanetId(planetId);
                 }
             }
         }
