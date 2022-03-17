@@ -51,9 +51,7 @@ namespace SolarSystem
                 services.AddScoped<ILanguageService, MockLanguageService>();
                 services.AddScoped<ILocalizationService, MockLocalizationService>();
                 services.AddScoped<IPlanetService, MockPlanetService>();
-            }
-
-
+            }            
 
             // one of the services that comes in the EF Core Nuget package, basically this is how we map the 
             // context class into EF and set the connection string read from appsettings.json file

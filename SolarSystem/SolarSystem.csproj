@@ -1,63 +1,65 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<AspNetCoreHostingModel>OutOfProcess</AspNetCoreHostingModel>
+		<AspNetCoreModuleName>AspNetCoreModule</AspNetCoreModuleName>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <Content Remove="wwwroot\css\det.css" />
-    <Content Remove="wwwroot\css\index.css" />
-    <Content Remove="wwwroot\css\stardust.css" />
-    <Content Remove="wwwroot\js\stardust.js" />
-    <Content Remove="wwwroot\lib\Images\astronaut.png" />
-    <Content Remove="wwwroot\lib\Images\cursor.png" />
-    <Content Remove="wwwroot\lib\Images\space_background.jpg" />
-    <Content Remove="wwwroot\lib\Images\Stars\star1.png" />
-    <Content Remove="wwwroot\lib\Images\Stars\star2.png" />
-    <Content Remove="wwwroot\lib\Images\Stars\star3.png" />
-    <Content Remove="wwwroot\lib\Images\Stars\star4.png" />
-    <Content Remove="wwwroot\lib\Images\Stars\star5.png" />
-    <Content Remove="wwwroot\Planets\earth.png" />
-    <Content Remove="wwwroot\Planets\jupiter.png" />
-    <Content Remove="wwwroot\Planets\mars.png" />
-    <Content Remove="wwwroot\Planets\mercury.png" />
-    <Content Remove="wwwroot\Planets\moon.png" />
-    <Content Remove="wwwroot\Planets\neptune.png" />
-    <Content Remove="wwwroot\Planets\pluto.png" />
-    <Content Remove="wwwroot\Planets\saturn.png" />
-    <Content Remove="wwwroot\Planets\sun.png" />
-    <Content Remove="wwwroot\Planets\uranus.png" />
-    <Content Remove="wwwroot\Planets\venus.png" />
-  </ItemGroup>
+	<ItemGroup>
+		<Content Remove="wwwroot\css\det.css" />
+		<Content Remove="wwwroot\css\index.css" />
+		<Content Remove="wwwroot\css\stardust.css" />
+		<Content Remove="wwwroot\js\stardust.js" />
+		<Content Remove="wwwroot\lib\Images\astronaut.png" />
+		<Content Remove="wwwroot\lib\Images\cursor.png" />
+		<Content Remove="wwwroot\lib\Images\space_background.jpg" />
+		<Content Remove="wwwroot\lib\Images\Stars\star1.png" />
+		<Content Remove="wwwroot\lib\Images\Stars\star2.png" />
+		<Content Remove="wwwroot\lib\Images\Stars\star3.png" />
+		<Content Remove="wwwroot\lib\Images\Stars\star4.png" />
+		<Content Remove="wwwroot\lib\Images\Stars\star5.png" />
+		<Content Remove="wwwroot\Planets\earth.png" />
+		<Content Remove="wwwroot\Planets\jupiter.png" />
+		<Content Remove="wwwroot\Planets\mars.png" />
+		<Content Remove="wwwroot\Planets\mercury.png" />
+		<Content Remove="wwwroot\Planets\moon.png" />
+		<Content Remove="wwwroot\Planets\neptune.png" />
+		<Content Remove="wwwroot\Planets\pluto.png" />
+		<Content Remove="wwwroot\Planets\saturn.png" />
+		<Content Remove="wwwroot\Planets\sun.png" />
+		<Content Remove="wwwroot\Planets\uranus.png" />
+		<Content Remove="wwwroot\Planets\venus.png" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <None Include="wwwroot\css\det.css" />
-    <None Include="wwwroot\css\index.css" />
-    <None Include="wwwroot\css\stardust.css" />
-    <None Include="wwwroot\js\stardust.js" />
-    <None Include="wwwroot\lib\Images\astronaut.png" />
-    <None Include="wwwroot\lib\Images\cursor.png" />
-    <None Include="wwwroot\lib\Images\space_background.jpg" />
-    <None Include="wwwroot\lib\Images\Stars\star1.png" />
-    <None Include="wwwroot\lib\Images\Stars\star2.png" />
-    <None Include="wwwroot\lib\Images\Stars\star3.png" />
-    <None Include="wwwroot\lib\Images\Stars\star4.png" />
-    <None Include="wwwroot\lib\Images\Stars\star5.png" />
-    <None Include="wwwroot\Planets\earth.png" />
-    <None Include="wwwroot\Planets\jupiter.png" />
-    <None Include="wwwroot\Planets\mars.png" />
-    <None Include="wwwroot\Planets\mercury.png" />
-    <None Include="wwwroot\Planets\moon.png" />
-    <None Include="wwwroot\Planets\neptune.png" />
-    <None Include="wwwroot\Planets\pluto.png" />
-    <None Include="wwwroot\Planets\saturn.png" />
-    <None Include="wwwroot\Planets\sun.png" />
-    <None Include="wwwroot\Planets\uranus.png" />
-    <None Include="wwwroot\Planets\venus.png" />
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="wwwroot\css\det.css" />
+		<None Include="wwwroot\css\index.css" />
+		<None Include="wwwroot\css\stardust.css" />
+		<None Include="wwwroot\js\stardust.js" />
+		<None Include="wwwroot\lib\Images\astronaut.png" />
+		<None Include="wwwroot\lib\Images\cursor.png" />
+		<None Include="wwwroot\lib\Images\space_background.jpg" />
+		<None Include="wwwroot\lib\Images\Stars\star1.png" />
+		<None Include="wwwroot\lib\Images\Stars\star2.png" />
+		<None Include="wwwroot\lib\Images\Stars\star3.png" />
+		<None Include="wwwroot\lib\Images\Stars\star4.png" />
+		<None Include="wwwroot\lib\Images\Stars\star5.png" />
+		<None Include="wwwroot\Planets\earth.png" />
+		<None Include="wwwroot\Planets\jupiter.png" />
+		<None Include="wwwroot\Planets\mars.png" />
+		<None Include="wwwroot\Planets\mercury.png" />
+		<None Include="wwwroot\Planets\moon.png" />
+		<None Include="wwwroot\Planets\neptune.png" />
+		<None Include="wwwroot\Planets\pluto.png" />
+		<None Include="wwwroot\Planets\saturn.png" />
+		<None Include="wwwroot\Planets\sun.png" />
+		<None Include="wwwroot\Planets\uranus.png" />
+		<None Include="wwwroot\Planets\venus.png" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.22" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.22" />
+	</ItemGroup>
 
 </Project>
