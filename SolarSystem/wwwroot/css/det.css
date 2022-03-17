@@ -1,6 +1,5 @@
 .container-fluid {
-    height: calc(100vh - 90px);
-    overflow-y: auto;
+    height: calc(100vh);
 }
 
 .detail-planet{

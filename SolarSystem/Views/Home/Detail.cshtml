@@ -4,10 +4,9 @@
 
  <div class="container planetinfo">
              <div class="row">
-                <button onclick="playAudio()">Audio</button>
-                <audio id="audioFile" src='../../@GetString("details."+@Model.Name+".audio")'></audio>
+                <button onclick="playAudio()" class="btn btn-light">Audio</button>
+                <audio id="audioFile" src='../../@GetString("details."+@Model.Name+".audio")' autoplay></audio>
                 <script>
-                    
                     var playPause = true;
                     function playAudio(){
                         var file = document.getElementById("audioFile");
