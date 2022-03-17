@@ -2,10 +2,10 @@
     height: calc(100vh);
 }
 
-.detail-planet{
-    width: 100%;
-    
-    
+.detail-planet {
+    display: block;
+    width: 70%;
+    margin: 20px auto;
 }
 .detail-text{
     
@@ -17,11 +17,13 @@
     margin-bottom: 20px;
 }
 .detail-facts{
+    width: 100%;
     color: rgb(183, 235, 236);
     background-color: rgba(128, 128, 128, 0.555);
     border: solid black;
     border-radius:  5px;
     padding: 20px 20px 20px 20px;
+    box-sizing: border-box;
 }
 
 .detail-structure{
@@ -49,8 +51,27 @@
   ::-webkit-scrollbar-thumb {
     background: #888; 
   }
-  
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }
+
+.detail-text-subtitle h3{
+    color: #cc87f9;
+    text-align: center;
+    line-height: 50px;
+    border-bottom: 4px solid #333333;
+    background: rgb(51 51 51 / 60%);
+}
+
+.detail-text p, .detail-facts ul, .detail-facts-subtitle {
+    color: #fff;
+    text-align: justify;
+    padding: 10px 15px;
+    background: rgb(51 51 51 / 60%);
+    border-bottom: 4px solid #333333;
+    margin: 0;
+}
+.detail-facts ul {
+    padding-left: 30px;
+}
