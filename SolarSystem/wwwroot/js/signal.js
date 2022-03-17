@@ -5,7 +5,7 @@ var connection = new signalR.HubConnectionBuilder().withUrl("/planetSelecterHub"
 
 connection.on("PlanetSelecter", function (message) {
 
-    let temp = "http://localhost:59557/Home/Detail/" + message;
+    let temp = "http://10.108.149.16:81/Home/Detail/" + message;
     location.href = temp;
 
 });

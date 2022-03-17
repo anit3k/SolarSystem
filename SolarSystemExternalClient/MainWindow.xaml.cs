@@ -20,7 +20,7 @@ namespace SignalRChatClient
 
             //Calls our connection to the hub, with the url pointing towards our other program, with a parameter of the hub.
             connection = new HubConnectionBuilder()
-                .WithUrl("http://localhost:59557/PlanetSelecterHub")
+                .WithUrl("http://10.108.149.16:81/PlanetSelecterHub")
                 .Build();
 
             //If the connection fails, and there is an error, wait and try again.
