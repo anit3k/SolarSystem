@@ -27,7 +27,7 @@
     <Content Remove="wwwroot\Planets\mercury.png" />
     <Content Remove="wwwroot\Planets\moon-structure.png" />
     <Content Remove="wwwroot\Planets\moon.png" />
-    <Content Remove="wwwroot\Planets\neptune-structure.jpg" />
+    <Content Remove="wwwroot\Planets\neptune-structure.png" />
     <Content Remove="wwwroot\Planets\neptune.png" />
     <Content Remove="wwwroot\Planets\pluto-structure.png" />
     <Content Remove="wwwroot\Planets\pluto.png" />
@@ -64,7 +64,7 @@
     <None Include="wwwroot\Planets\mercury.png" />
     <None Include="wwwroot\Planets\moon-structure.png" />
     <None Include="wwwroot\Planets\moon.png" />
-    <None Include="wwwroot\Planets\neptune-structure.jpg" />
+    <None Include="wwwroot\Planets\neptune-structure.png" />
     <None Include="wwwroot\Planets\neptune.png" />
     <None Include="wwwroot\Planets\pluto-structure.png" />
     <None Include="wwwroot\Planets\pluto.png" />
