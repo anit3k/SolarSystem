@@ -153,7 +153,8 @@ namespace SolarSystem.Services
 
                 new StringResources{LanguageId = 1, Name = "details.pluto.audio", Value = "lib/audio/pluto-en.mp3" },
                 new StringResources{LanguageId = 2, Name = "details.pluto.audio", Value = "lib/audio/pluto-hu.mp3" },
-                new StringResources{LanguageId = 3, Name = "details.pluto.audio", Value = "lib/audio/pluto-da.mp3" },
+                new StringResources{LanguageId = 3, Name = "details.pluto.audio", Value = "lib/audio/pluto-da.mp3" }
+
             };
         }
         #endregion
