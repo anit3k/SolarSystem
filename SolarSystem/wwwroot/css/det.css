@@ -75,3 +75,7 @@
 .detail-facts ul {
     padding-left: 30px;
 }
+
+#audioPlay {
+    margin-top: 1.25vh;
+}

@@ -1,125 +1,126 @@
 ﻿@model Planet
-<link rel="stylesheet" href="~/css/det.css"/>
+<link rel="stylesheet" href="~/css/det.css" />
 
 
- <div class="container planetinfo">
-             <div class="row">
-                <button onclick="playAudio()" class="btn btn-light">Audio</button>
-                <audio id="audioFile" src='../../@GetString("details."+@Model.Name+".audio")' autoplay></audio>
-                <script>
-                    var playPause = true;
-                    function playAudio(){
-                        var file = document.getElementById("audioFile");
-                        if(playPause){
-                            file.play();
-                            playPause = false;
-                            console.log("play");
-                        }
-                        else{
-                            file.pause();
-                            playPause = true;
-                            console.log("pause");
-                        }
-                    }
-                </script>
-            </div>
-            <div class="row d-none">
-                <div class="col-sm-6">
-                    <!--main planet png-->
-                    <div class="row">
-                    <div class="col-sm-12">
+<div class="container planetinfo">
+    <div class="row d-none">
+        <div class="col-sm-6">
+            <!--main planet png-->
+            <div class="row">
+                <div class="col-sm-12">
                     <img src="@GetString("../../Planets/"+@Model.Name+".png")" class="detail-planet" alt="" title="">
-                    </div>
-                    <div class="col-sm-12">
+                </div>
+                <div class="col-sm-12">
                     <img src="../../Planets/@Model.Name-structure.png" class="detail-planet" alt="" title="">
-                    </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    
-                    <div class="detail-text">
-                        <div class="detail-text-subtitle">
-                        <h3>@GetString("index."+@Model.Name)</h3>
-                    </div>
-                    <p>
-                       @GetString("details."+@Model.Name)
-                    </p>
-                </div>
-                
-                <div class="detail-facts">
-                    <div class="detail-facts-subtitle">
-                        <h4>Facts</h4>
-                    </div>
-                    <ul>
-                        <li>Sun accounts for 99.86% of the mass in the solar system.</li>
-                        <li>Over one million Earth's could fit inside the Sun.</li>
-                        <li>One day the Sun will consume the Earth.</li>
-                        <li>The energy created by the Sun's core is nuclear fusion.</li>
-                        <li>The Sun is almost a perfect sphere.</li>
-                        <li>The Sun is travelling at 220 km per second.</li>
-                    </ul>
-                </div>
-            
-            </div>
-
-
-        </div>
-        <div class="row d-none">
-            <div class="col-sm-6">
-                <!--planet structure png-->
-                <img src="sun-structure.png" class="detail-structure" alt="">
-            </div>
-            <div class="col-sm-6">
-
-                <div class="detail-facts">
-                    <div class="detail-facts-subtitle">
-                        <h4>Facts</h4>
-                    </div>
-                    <ul>
-                        <li>Sun accounts for 99.86% of the mass in the solar system.</li>
-                        <li>Over one million Earth's could fit inside the Sun.</li>
-                        <li>One day the Sun will consume the Earth.</li>
-                        <li>The energy created by the Sun's core is nuclear fusion.</li>
-                        <li>The Sun is almost a perfect sphere.</li>
-                        <li>The Sun is travelling at 220 km per second.</li>
-                    </ul>
                 </div>
             </div>
         </div>
+        <div class="col-sm-6">
 
-        <!---->
-        <div class="row">
-                <div class="col-sm-6 d-flex align-items-center">
-                    <img src="@GetString("../../Planets/"+@Model.Name+".png")" class="detail-planet" alt="" title="">
+            <div class="detail-text">
+                <div class="detail-text-subtitle">
+                    <h3>@GetString("index."+@Model.Name)</h3>
                 </div>
-                <div class="col-sm-6 d-flex align-items-center">
-                    
-                    <div class="detail-text">
-                        <div class="detail-text-subtitle">
-                        <h3>@GetString("index."+@Model.Name)</h3>
-                        </div>
-                        <p>
-                           @GetString("details."+@Model.Name)
-                        </p>
-                    </div>
-                </div>
-         </div>
-         <div class="row">
-             <div class="col-sm-6 d-flex align-items-center">
-                    <img src="../../Planets/@Model.Name-structure.png" class="detail-planet" alt="" title="">
-             </div>
-             <div class="col-sm-6 d-flex align-items-center">
-                <div class="detail-facts">
-                    <div class="detail-facts-subtitle">
-                        <h4>@GetString("details.facts.trl")</h4>
-                    </div>
-                    <ul>
-                        @GetString("details.facts."+@Model.Name)
-                    </ul>
-                </div>
-            </div>
+                <p>
+                    @GetString("details."+@Model.Name)
+                </p>
             </div>
 
+            <div class="detail-facts">
+                <div class="detail-facts-subtitle">
+                    <h4>Facts</h4>
+                </div>
+                <ul>
+                    <li>Sun accounts for 99.86% of the mass in the solar system.</li>
+                    <li>Over one million Earth's could fit inside the Sun.</li>
+                    <li>One day the Sun will consume the Earth.</li>
+                    <li>The energy created by the Sun's core is nuclear fusion.</li>
+                    <li>The Sun is almost a perfect sphere.</li>
+                    <li>The Sun is travelling at 220 km per second.</li>
+                </ul>
+            </div>
 
-        <script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
-        <script src="~/js/signal.js"></script>
+        </div>
+
+
+    </div>
+    <div class="row d-none">
+        <div class="col-sm-6">
+            <!--planet structure png-->
+            <img src="sun-structure.png" class="detail-structure" alt="">
+        </div>
+        <div class="col-sm-6">
+
+            <div class="detail-facts">
+                <div class="detail-facts-subtitle">
+                    <h4>Facts</h4>
+                </div>
+                <ul>
+                    <li>Sun accounts for 99.86% of the mass in the solar system.</li>
+                    <li>Over one million Earth's could fit inside the Sun.</li>
+                    <li>One day the Sun will consume the Earth.</li>
+                    <li>The energy created by the Sun's core is nuclear fusion.</li>
+                    <li>The Sun is almost a perfect sphere.</li>
+                    <li>The Sun is travelling at 220 km per second.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!---->
+    <div class="row">
+        <div class="col-sm-6 d-flex align-items-center">
+            <img src="@GetString("../../Planets/"+@Model.Name+".png")" class="detail-planet" alt="" title="">
+        </div>
+        <div class="col-sm-6 d-flex align-items-center">
+
+            <div class="detail-text">
+                <div class="detail-text-subtitle">
+                    <h3>@GetString("index."+@Model.Name) <button id="audioPlay" onclick="playAudio()" class="btn btn-dark float-right"><i class="bi bi-pause-circle"></i></button></h3>
+                    <audio id="audioFile" src='../../@GetString("details."+@Model.Name+".audio")' autoplay></audio>
+                    <script>
+                        var playPause = false;
+                        function playAudio(){
+                            var file = document.getElementById("audioFile");
+                            if(playPause){
+                                file.play();
+                                let audioButton = document.getElementById("audioPlay");
+                                audioButton.innerHTML = '<i class="bi bi-play-circle"></i>';
+                                playPause = false;
+                                console.log("play");
+                            }
+                            else{
+                                file.pause();
+                                let audioButton = document.getElementById("audioPlay");
+                                audioButton.innerHTML = '<i class="bi bi-pause-circle"></i>';
+                                playPause = true;
+                                console.log("pause");
+                            }
+                        }
+                    </script>
+                </div>
+                <p>
+                    @GetString("details."+@Model.Name)
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 d-flex align-items-center">
+            <img src="../../Planets/@Model.Name-structure.png" class="detail-planet" alt="" title="">
+        </div>
+        <div class="col-sm-6 d-flex align-items-center">
+            <div class="detail-facts">
+                <div class="detail-facts-subtitle">
+                    <h4>@GetString("details.facts.trl")</h4>
+                </div>
+                <ul>
+                    @GetString("details.facts."+@Model.Name)
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+    <script src="~/js/signal.js"></script>
