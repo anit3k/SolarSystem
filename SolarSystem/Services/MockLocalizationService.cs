@@ -23,6 +23,10 @@ namespace SolarSystem.Services
                 new StringResources{LanguageId = 2, Name = "nav.home", Value = "Főoldal"},
                 new StringResources{LanguageId = 3, Name = "nav.home", Value = "Hjem"},
 
+                new StringResources{LanguageId = 1, Name = "details.facts.trl", Value = "Facts"},
+                new StringResources{LanguageId = 2, Name = "details.facts.trl", Value = "Érdekességek"},
+                new StringResources{LanguageId = 3, Name = "details.facts.trl", Value = "Facts"},
+
                 new StringResources{LanguageId = 1, Name = "index.sun", Value = "Sun"},
                 new StringResources{LanguageId = 2, Name = "index.sun", Value = "Nap"},
                 new StringResources{LanguageId = 3, Name = "index.sun", Value = "Solen"},
@@ -110,6 +114,53 @@ namespace SolarSystem.Services
                 new StringResources{LanguageId = 1, Name = "details.venus", Value = "Venus is the second planet from the Sun and is Earth’s closest planetary neighbor. It’s one of the four inner, terrestrial planets, and it’s often called Earth’s twin because it’s similar in size and density. Venus has a thick, toxic atmosphere filled with carbon dioxide and it’s perpetually shrouded in thick, yellowish clouds of sulfuric acid that trap heat. It’s the hottest planet in our solar system, even though Mercury is closer to the Sun. Surface temperatures on Venus are about 475°C Venus has crushing air pressure at its surface – more than 90 times that of Earth – similar to the pressure you’d encounter a mile below the ocean on Earth. Another big difference from Earth – Venus rotates on its axis backward, compared to most of the other planets in the solar system. Venus was the first planet to be explored by a spacecraft."},
                 new StringResources{LanguageId = 2, Name = "details.venus", Value = "A Vénusz a második bolygó a namtól,és a Föld legközelebbi szomszédja. Egy a négy belső, föld típusó bolygóknak, és gyakran hívják a föld ikrének mert hasonló méretű és sűrűségű. Vastag, mérgező atmoszférája van, szén-dioxiddal töltve, és örökké burkolt vastag, sárgás kénsav felhőkkel amik megtartják a hőt. A naprendszer legforróbb bolygója, annak ellenére hogy a Mercury közelebb van a naphoz. A felszíni hőmérséklet nagyjából 475°C. Hatalmas légnyomás van a felszínen -a földi nyomás 90-szerese- hasonló mint 2 kilóméterrel az óceán felszíne alatt. Egy másik nagy különbség, a Vénusz visszafele forog a tengelyén a naprendszer legtöbb bolygójához képest. A Vénusz volt az első bolygó amit műholddal fedeztek fel."},
                 new StringResources{LanguageId = 3, Name = "details.venus", Value = "Venus er den anden planet fra Solen, og er jordens nærmeste plentære nabo. Den er en af de fire indre planetære planeter, og er often kaldet \"Jordens tvilling\", da de minder om hinanden i både størrelse og densitet. Venus har en tyk, giftig atmosfære, fyldt med carbon dioxid, og er dækket i tykke, gullige skyer af svolvsyre som fanger varme. Det er den varmeste planet i vores solsystem, selvom Merkur er tættere på solen. Overflade temperaturen på Venus er omkring 475°C. Venus har et knusende lufttryk på dens overflade - mere end 90 gange jordens lufttryk - svarende til hvad du ville føle 1,6 kilometer under havet på jorden. Endnu en stor forskel fra Jorden - Venus roteres baglæns på dens akse, sammenlignet med de fleste andre planeter i vores solsystem. Venus var den første planet som blev udforsket af et rumskib."},
+
+                //Facts
+
+                new StringResources{LanguageId = 1, Name = "details.facts.earth", Value = ""},
+                new StringResources{LanguageId = 2, Name = "details.facts.earth", Value = ""},
+                new StringResources{LanguageId = 3, Name = "details.facts.earth", Value = ""},
+
+                new StringResources{LanguageId = 1, Name = "details.facts.jupiter", Value = ""},
+                new StringResources{LanguageId = 2, Name = "details.facts.jupiter", Value = ""},
+                new StringResources{LanguageId = 3, Name = "details.facts.jupiter", Value = ""},
+
+                new StringResources{LanguageId = 1, Name = "details.facts.mars", Value = ""},
+                new StringResources{LanguageId = 2, Name = "details.facts.mars", Value = ""},
+                new StringResources{LanguageId = 3, Name = "details.facts.mars", Value = ""},
+
+                new StringResources{LanguageId = 1, Name = "details.facts.mercury", Value = ""},
+                new StringResources{LanguageId = 2, Name = "details.facts.mercury", Value = ""},
+                new StringResources{LanguageId = 3, Name = "details.facts.mercury", Value = ""},
+
+                new StringResources{LanguageId = 1, Name = "details.facts.moon", Value = ""},
+                new StringResources{LanguageId = 2, Name = "details.facts.moon", Value = ""},
+                new StringResources{LanguageId = 3, Name = "details.facts.moon", Value = ""},
+
+                new StringResources{LanguageId = 1, Name = "details.facts.neptune", Value = ""},
+                new StringResources{LanguageId = 2, Name = "details.facts.neptune", Value = ""},
+                new StringResources{LanguageId = 3, Name = "details.facts.neptune", Value = ""},
+
+                new StringResources{LanguageId = 1, Name = "details.facts.pluto", Value = ""},
+                new StringResources{LanguageId = 2, Name = "details.facts.pluto", Value = ""},
+                new StringResources{LanguageId = 3, Name = "details.facts.pluto", Value = ""},
+
+                new StringResources{LanguageId = 1, Name = "details.facts.saturn", Value = ""},
+                new StringResources{LanguageId = 2, Name = "details.facts.saturn", Value = ""},
+                new StringResources{LanguageId = 3, Name = "details.facts.saturn", Value = ""},
+
+                new StringResources{LanguageId = 1, Name = "details.facts.sun", Value = ""},
+                new StringResources{LanguageId = 2, Name = "details.facts.sun", Value = ""},
+                new StringResources{LanguageId = 3, Name = "details.facts.sun", Value = ""},
+
+                new StringResources{LanguageId = 1, Name = "details.facts.uranus", Value = ""},
+                new StringResources{LanguageId = 2, Name = "details.facts.uranus", Value = ""},
+                new StringResources{LanguageId = 3, Name = "details.facts.uranus", Value = ""},
+
+                new StringResources{LanguageId = 1, Name = "details.facts.venus", Value = ""},
+                new StringResources{LanguageId = 2, Name = "details.facts.venus", Value = ""},
+                new StringResources{LanguageId = 3, Name = "details.facts.venus", Value = ""},
+
 
                 new StringResources{LanguageId = 1, Name = "details.sun.audio", Value = "lib/audio/sun-en.mp3" },
                 new StringResources{LanguageId = 2, Name = "details.sun.audio", Value = "lib/audio/sun-hu.mp3" },

@@ -5,16 +5,16 @@
     <div class="col-lg-12 position-absolute" style="top: 0;">
         <div class="solar-system-container" id="solar-system-container">
             <div class="planets-container pc-1">
-                <div class="planets-nav planet-10"><img src="~/Planets/pluto.png" alt=""></div>
-                <div class="planets-nav planet-9"><img src="~/Planets/neptune.png" alt=""></div>
-                <div class="planets-nav planet-8"><img src="~/Planets/uranus.png" alt=""></div>
-                <div class="planets-nav planet-7"><img src="~/Planets/saturn.png" alt=""></div>
-                <div class="planets-nav planet-6"><img src="~/Planets/jupiter.png" alt=""></div>
-                <div class="planets-nav planet-5"><img src="~/Planets/mars.png" alt=""></div>
-                <div class="planets-nav planet-4"><img src="~/Planets/earth.png" alt=""></div>
-                <div class="planets-nav planet-3"><img src="~/Planets/venus.png" alt=""></div>
-                <div class="planets-nav planet-2"><img src="~/Planets/mercury.png" alt=""></div>
-                <div class="planets-nav planet-1"><img src="~/Planets/sun.png" alt=""></div>
+                <div class="planets-nav planet-10"><a asp-controller="Home" asp-action="Detail" asp-route-id="@Model.PlanetList[10].Id"><img src="~/Planets/pluto.png" alt=""/></a></div>
+                <div class="planets-nav planet-9"><a asp-controller="Home" asp-action="Detail" asp-route-id="@Model.PlanetList[9].Id"><img src="~/Planets/neptune.png" alt=""/></a></div>
+                <div class="planets-nav planet-8"><a asp-controller="Home" asp-action="Detail" asp-route-id="@Model.PlanetList[8].Id"><img src="~/Planets/uranus.png" alt=""/></a></div>
+                <div class="planets-nav planet-7"><a asp-controller="Home" asp-action="Detail" asp-route-id="@Model.PlanetList[7].Id"><img src="~/Planets/saturn.png" alt=""/></a></div>
+                <div class="planets-nav planet-6"><a asp-controller="Home" asp-action="Detail" asp-route-id="@Model.PlanetList[6].Id"><img src="~/Planets/jupiter.png" alt=""/></a></div>
+                <div class="planets-nav planet-5"><a asp-controller="Home" asp-action="Detail" asp-route-id="@Model.PlanetList[5].Id"><img src="~/Planets/mars.png" alt=""/></a></div>
+                <div class="planets-nav planet-4"><a asp-controller="Home" asp-action="Detail" asp-route-id="@Model.PlanetList[3].Id"><img src="~/Planets/earth.png" alt=""/></a></div>
+                <div class="planets-nav planet-3"><a asp-controller="Home" asp-action="Detail" asp-route-id="@Model.PlanetList[2].Id"><img src="~/Planets/venus.png" alt=""/></a></div>
+                <div class="planets-nav planet-2"><a asp-controller="Home" asp-action="Detail" asp-route-id="@Model.PlanetList[1].Id"><img src="~/Planets/mercury.png" alt=""/></a></div>
+                <div class="planets-nav planet-1"><a asp-controller="Home" asp-action="Detail" asp-route-id="@Model.PlanetList[0].Id"><img src="~/Planets/sun.png" alt=""/></a></div>
             </div>
         </div>
         <div class="details-frame" id="details-frame">
