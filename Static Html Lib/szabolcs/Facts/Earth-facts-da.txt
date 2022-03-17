@@ -1,6 +1,6 @@
-Tektoniske plader spiller en hovedrolle i carbon cyklusen og for at bestemme mængden af karbon dioxid i atmosfæren.
-Jorden er næsten en kugle.
-Jorden er mest jern, oxygen, og silicium.
-70% af jordens atmosfære er dækket af vand.
-Jordens atmosfære rækker en distance af 10.000 kilometer.
-Jordens flydende jern kerne skaber et magnetisk felt.
+<li>Tektoniske plader spiller en hovedrolle i carbon cyklusen og for at bestemme mængden af karbon dioxid i atmosfæren.</li>
+<li>Jorden er næsten en kugle.</li>
+<li>Jorden er mest jern, oxygen, og silicium.</li>
+<li>70% af jordens atmosfære er dækket af vand.</li>
+<li>Jordens atmosfære rækker en distance af 10.000 kilometer.</li>
+<li>Jordens flydende jern kerne skaber et magnetisk felt.</li>

@@ -1,5 +1,5 @@
-Merkur er den planet som er tættest på solen.
-Merkur er også den mindste planet i vores solsystem.
-Udover at være den mindste planet, bliver Merkur også mindre.
-Merkur er den planet med flest kratere i vores solsystem.
-Det største kraer på merkur kan indeholde hele vest europa.
+<li>Merkur er den planet som er tættest på solen.</li>
+<li>Merkur er også den mindste planet i vores solsystem.</li>
+<li>Udover at være den mindste planet, bliver Merkur også mindre.</li>
+<li>Merkur er den planet med flest kratere i vores solsystem.</li>
+<li>Det største kraer på merkur kan indeholde hele vest europa.</li>

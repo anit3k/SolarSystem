@@ -1,7 +1,7 @@
-Jupiter er meget stor.
-Jupiter kan ikke blive en stjerne.
-Jupiter er then hurtigst roterende planet, i vores solsystem.
-Skyerne på jupiter er 50 kilometer tykke.
-Jupiter har et længe levende kæmpe stormsystem kaldet "Great Red Spot".
-Jupiter har ringe.
-JUpters magnetiske felt er 14 gange stærkere en jordens.
+<li>Jupiter er meget stor.</li>
+<li>Jupiter kan ikke blive en stjerne.</li>
+<li>Jupiter er then hurtigst roterende planet, i vores solsystem.</li>
+<li>Skyerne på jupiter er 50 kilometer tykke.</li>
+<li>Jupiter har et længe levende kæmpe stormsystem kaldet "Great Red Spot".</li>
+<li>Jupiter har ringe.</li>
+<li>JUpters magnetiske felt er 14 gange stærkere en jordens.</li>

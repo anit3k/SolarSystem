@@ -1,6 +1,6 @@
-Pluto er opkaldt efter den romerske gud af underverdnen.
-Pluto var omklassificeret fra en planet til en dværgplanet i 2006.
-Pluto var opdaget den 18. februar, 1930 af Lowell Observatoriet.
-Pluto har fem kendte måner.
-Pluto er den største dværgplanet i vores solsystem.
-Pluto består af en tredjedel vand.
+<li>Pluto er opkaldt efter den romerske gud af underverdnen.</li>
+<li>Pluto var omklassificeret fra en planet til en dværgplanet i 2006.</li>
+<li>Pluto var opdaget den 18. februar, 1930 af Lowell Observatoriet.</li>
+<li>Pluto har fem kendte måner.</li>
+<li>Pluto er den største dværgplanet i vores solsystem.</li>
+<li>Pluto består af en tredjedel vand.</li>

@@ -1,6 +1,6 @@
-Uranus er den koldeste planet i vores solsystem.
-En årstid på uranus vare en lang day - 42 år.
-Uranus er den anden mindst kompakte planet i vores solsystem.
-Uranus har ringe.
-Atmosfæren af Uranus indeholder is.
-Uranus har 27 måner.
+<li>Uranus er den koldeste planet i vores solsystem.</li>
+<li>En årstid på uranus vare en lang day - 42 år.</li>
+<li>Uranus er den anden mindst kompakte planet i vores solsystem.</li>
+<li>Uranus har ringe.</li>
+<li>Atmosfæren af Uranus indeholder is.</li>
+<li>Uranus har 27 måner.</li>

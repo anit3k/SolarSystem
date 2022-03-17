@@ -21,7 +21,7 @@ namespace SolarSystem.Services
 
                 new StringResources{LanguageId = 1, Name = "nav.home", Value = "Home"},
                 new StringResources{LanguageId = 2, Name = "nav.home", Value = "Főoldal"},
-                new StringResources{LanguageId = 3, Name = "nav.home", Value = "Unknown"},
+                new StringResources{LanguageId = 3, Name = "nav.home", Value = "Hjem"},
 
                 new StringResources{LanguageId = 1, Name = "index.sun", Value = "Sun"},
                 new StringResources{LanguageId = 2, Name = "index.sun", Value = "Nap"},
