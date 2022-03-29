@@ -51,7 +51,7 @@ namespace SolarSystem
                 services.AddScoped<ILanguageService, LanguageService>();
                 services.AddScoped<ILocalizationService, LocalizationService>();
                 services.AddScoped<IPlanetService, PlanetService>();
-            }            
+            }
 
             // one of the services that comes in the EF Core Nuget package, basically this is how we map the 
             // context class into EF and set the connection string read from appsettings.json file
@@ -66,6 +66,21 @@ namespace SolarSystem
             services.AddControllersWithViews()
                         .AddViewLocalization(); // this service allow us to use @Localization syntax in the view
 
+
+            BuildLanguageService(services);
+
+
+            // Here we add the service for using SignalR, in this case we use it for an external client (Arduino and winform) to change the current url
+            // to show selected planet
+            services.AddSignalR();
+        }
+
+        /// <summary>
+        /// This method configures the Language service
+        /// </summary>
+        /// <param name="services"></param>
+        private static void BuildLanguageService(IServiceCollection services)
+        {
             // Here we make a new reference to a service provider, that we use to get the cultureInfo (supported language)
             var serviceProvider = services.BuildServiceProvider();
             var languageService = serviceProvider.GetRequiredService<ILanguageService>();
@@ -82,16 +97,14 @@ namespace SolarSystem
                 options.SupportedCultures = cultures;
                 options.SupportedUICultures = cultures;
             });
-
-
-            // Here we add the service for using SignalR, in this case we use it for an external client (Arduino and winform) to change the current url
-            // to show selected planet
-            services.AddSignalR(); 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            
+
+
             // this method is called so that we can use the languageService and the localizationService
             app.UseRequestLocalization();
 
